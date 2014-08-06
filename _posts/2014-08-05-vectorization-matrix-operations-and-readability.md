@@ -62,7 +62,7 @@ As you can see in this example, vectorized code is not only fast but also brief 
 
 Matrix operations are your friend
 -------------------------
-Some times vectors are not enough, so we can use matrix operations to avoid loops. For example, if we want to center a matrix (i.e. substract the global mean to each rows) we can use the function `scale(x,center=T, scale=F)`, but imagine we don't have such function. What to do?
+Some times vectors are not enough, so we can use matrix operations to avoid loops. For example, if we want to center a matrix (i.e. substract the global mean to each row) we can use the function `scale(x,center=T, scale=F)`, but imagine we don't have such function. What to do?
 
 
 {% highlight r %}
@@ -279,4 +279,4 @@ columns = c("test", "elapsed", "replications"))
 
 We can see that not always speed go together with readability and elegancy. Probably the most readable solution is function 1 where we see that the mean is substracted from each row, but this is very slow. Functions 2 and 3 have a good compromise between readability and speed, while base functions although easy to use, are not always the most efficient way. Finally, using matrix operations can make your code less readable but fast thanks to the Linear Algebra libraries running in the back.
 
-Nevertheless, as Pablo Picasso said: "it took me a lifetime to paint like a child", probably when you will be a more advanced user you will come back to the cycles and then use <a href="http://www.rcpp.org/" target="_blank">Rcpp</a>, but I will speak about that in another post...
+If there is no way to avoid loops, one advice is to try always to loop over the smaller dimension, i.e. we can improve the efficiency of ``function1`` iterating by columns instead of by rows. Nevertheless, as Pablo Picasso said: "it took me a lifetime to paint like a child", probably when you will be a more advanced user you will come back to the cycles and then use <a href="http://www.rcpp.org/" target="_blank">Rcpp</a>, but I will speak about that in another post...

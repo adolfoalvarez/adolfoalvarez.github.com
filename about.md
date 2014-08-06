@@ -1,32 +1,20 @@
 ---
 layout: page
 permalink: /about/
-title: About the Jekyll Theme
-tags: [Jekyll, theme, simple, minimal, minimalism, responsive]
-modified: 2013-09-13
+title: About me
+tags: [Adolfo, me, bio]
+modified: 2014-08-03
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: Michael Rose
-  creditlink: http://mademistakes.com
+  feature: fondobio.jpg
+  credit: Adolfo Álvarez
+  creditlink: http://www.adolfoalvarez.cl
 ---
 
-Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes.com).
+Welcome to my website!. My name is Adolfo Álvarez, and currently you can find me at <a href="http://www.analyx.com" target="_blank">Analyx</a>, where I am part of a great team of analysts and data scientists who will extract valuable information from your data.
 
-## So Simple Theme is all about:
+I got a degree in Industrial Engineering at <a href="http://www.ingenieriaindustrial.usach.cl/" target="_blank"> Universidad de Santiago de Chile</a>, and later I moved to Spain where I completed my PhD in Business Management and Quantitative Methods at <a href="http://www.est.uc3m.es" target="_blank">Universidad Carlos III de Madrid</a> under the supervision of <a href="http://www.est.uc3m.es/dpena" target ="_blank">Daniel Peña</a>. I am interested in the theory and practise of data analysis, under this umbrella you can find many different names pointing to the same concept: business intelligence, statistical (or machine) learning, multivariate statistics, etc... You can find more details about my research interests in the CV section <a href="/cv">here </a>
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
-* Minimal embellishments and subtle animations. 
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Disqus comments if you choose to enable.
-* Simple and clear permalink structure[^1].
-* Tags for [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) for a better social sharing experience.
-* Vanilla [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/so-simple-theme/articles/code-highlighting-post/) to make your code examples look snazzy.
-* Simple search that overlays results based on post title.
-* [Grunt build script]({{ site.url }}/theme-setup/index.html#theme-development) for easier theme development.
+Once I was asked if I had another hobby besides <a href="http://www.r-project.org/" target = "_blank">R</a> (a.k.a. #rstats), and actually I have: Social networks, photography, travelling, and discovering new places in old cities, but developing R models takes up most of my time at work and some of my free time. In the "Articles" section you can find some thoughts, examples, and pieces of R code that have been useful for me, so I think is worth to share.
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+If you are interested in contact me, please send me an email to "adalvarez" within the domain gmail.com, or write me in twitter: <a href="http://www.twitter.com/adolfoalvarez" target="_blank">@adolfoalvarez</a> or let's connect in <a href="https://www.linkedin.com/in/adolfoalvarez" target="_blank">LinkedIn</a>.
 
-[^1]: Example: *domain.com/category-name/post-title*

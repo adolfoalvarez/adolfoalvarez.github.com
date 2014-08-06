@@ -60,7 +60,7 @@ system.time(lsum2(x))
 
 As you can see in this example, vectorized code is not only fast but also brief and elegant, two characteristics of "readability", which is a measure of how easy a code can be understood. We will come back to this topic later.
 
-Matrix operations are your friend
+Matrix operations are your friends
 -------------------------
 Some times vectors are not enough, so we can use matrix operations to avoid loops. For example, if we want to center a matrix (i.e. substract the global mean to each row) we can use the function `scale(x,center=T, scale=F)`, but imagine we don't have such function. What to do?
 

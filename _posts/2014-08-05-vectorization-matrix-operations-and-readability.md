@@ -117,7 +117,7 @@ function1(A)
   {% endhighlight %}
 
 
-The first attempt to devectorize that function could be just substract the vector of means to the matrix...
+The first attempt to vectorize that function could be just substract the vector of means to the matrix...
 
 {% highlight r %}
   function2 <- function(A) {
@@ -173,7 +173,7 @@ function2(A)
   {% endhighlight %}
 
 
-Another way is to use the fact that the repetition is done by columns, so we can substract `colMeans(A)` from $A^t$ and then transpose again the result:
+Another way is to use the fact that the repetition is done by columns, so we can substract `colMeans(A)` from $$A^t$$ and then transpose again the result:
 
 {% highlight r %}
   function3 <- function(A) {

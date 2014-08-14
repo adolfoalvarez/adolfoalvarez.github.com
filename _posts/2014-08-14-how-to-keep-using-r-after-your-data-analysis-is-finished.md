@@ -84,7 +84,7 @@ mine_sweeper()
 if (.Platform$OS.type == "windows") x11() else x11(type = "Xlib")
 gomoku()
 {% endhighlight %}
-
+![sudoku]({{ site.url }}/images/sudoku.png)
 
 * **Meme generator**. If you have been too busy writing R packages during the last years maybe you didn't notice that nowadays the internet is full of "memes" (those images combining a picture and a 'funny' message, although the concept is wider than that). Now is possible to create memes directly from R with the <a href="https://github.com/leeper/meme" target="_blank">meme</a> package (Requires installation from github using the devtools package):
 

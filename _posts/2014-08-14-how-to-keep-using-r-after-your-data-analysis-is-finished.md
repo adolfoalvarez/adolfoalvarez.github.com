@@ -72,7 +72,7 @@ fortune(298)
 ##       R-devel (September 2011)
 {% endhighlight %}
 
-* **Games**. Maybe R is not as good as your game console, but is also possible to play a few games in your favorite language (I mean R, not spanish!). You can play <a href="http://cran.r-project.org/web/packages/sudoku/index.html" target="_blank">sudoku</a>, <a href="http://cran.r-project.org/web/packages/fun/index.html" target="_blank">mine sweeper</a>, or <a href="http://cran.r-project.org/web/packages/fun/index.html" target="_blank">gomoku</a> (Gomoku? I've never played that...). These two last games are from the library `fun`, where you can also find other utilities such as a random password generation, an alzheimer test, or a command to shutdown the computer from R.
+* **Games**. Maybe R is not as good as your game console, but is also possible to play a few games in your favorite language (I mean R, not Spanish!). You can play <a href="http://cran.r-project.org/web/packages/sudoku/index.html" target="_blank">sudoku</a>, <a href="http://cran.r-project.org/web/packages/fun/index.html" target="_blank">mine sweeper</a>, or <a href="http://cran.r-project.org/web/packages/fun/index.html" target="_blank">gomoku</a> (Gomoku? I've never played that...). These two last games are from the library `fun`, where you can also find other utilities such as a random password generation, an Alzheimer's test, or a command to shutdown the computer from R.
 
 
 {% highlight r %}

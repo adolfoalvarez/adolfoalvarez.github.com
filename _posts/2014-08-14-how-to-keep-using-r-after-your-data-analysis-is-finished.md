@@ -21,7 +21,7 @@ If you are reading this blog, probably you already know how wonderful is R to pr
 beep("mario", print("Well done!"))
 {% endhighlight %}
 
-* **Sound synthesizer**. Speaking about music, have you ever wondered how your favourite data set sounds? Now you can find out with the package <a href= "http://playitbyr.org/", target= "_blank"> playitbyr</a>. You will need to install first the `csound` library, and the instructions are <a href="http://playitbyr.org/csound.html" , target="_blank">here</a> 
+* **Sound synthesizer**. Speaking about music, have you ever wondered how your favourite data set sounds? Now you can find out with the package <a href= "http://playitbyr.org/" target= "_blank"> playitbyr</a>. You will need to install first the `csound` library, and the instructions are <a href="http://playitbyr.org/csound.html"  target="_blank">here</a> 
 
 
 {% highlight r %}
@@ -29,7 +29,7 @@ beep("mario", print("Well done!"))
 sonify(iris, sonaes(time = Petal.Length, pitch = Petal.Width)) + shape_scatter()
 {% endhighlight %}
 
-* **Optical Illusions**. If you feel creative after that, maybe you can try your artistic talent and create some optical illusions with R and ggplot. You can find the following example and others <a href="http://rpubs.com/kohske/R-de-illusion", target="_blank">here</a> :
+* **Optical Illusions**. If you feel creative after that, maybe you can try your artistic talent and create some optical illusions with R and ggplot. You can find the following example and others <a href="http://rpubs.com/kohske/R-de-illusion" target="_blank">here</a> :
 
 
 {% highlight r %}
@@ -58,7 +58,7 @@ l_ply(1:ny, function(i) {
 
 ![plot of chunk unnamed-chunk-3]({{ site.url }}/images/unnamed-chunk-3.png) 
 
-* **Fortune**. What about acquiring some wisdom or predict your fortune? You can now do it with the package <a href="http://cran.r-project.org/web/packages/fortunes/index.html", target="_blank">fortunes</a>
+* **Fortune**. What about acquiring some wisdom or predict your fortune? You can now do it with the package <a href="http://cran.r-project.org/web/packages/fortunes/index.html" target="_blank">fortunes</a>
 
 
 {% highlight r %}
@@ -72,7 +72,7 @@ fortune(298)
 ##       R-devel (September 2011)
 {% endhighlight %}
 
-* **Games**. Maybe R is not as good as your game console, but is also possible to play a few games in your favorite language (I mean R, not spanish!). You can play <a href="http://cran.r-project.org/web/packages/sudoku/index.html", target="_blank">sudoku</a>, <a href="http://cran.r-project.org/web/packages/fun/index.html", target="_blank">mine sweeper</a>, or <a href="http://cran.r-project.org/web/packages/fun/index.html", target="_blank">gomoku</a> (Gomoku? I've never played that...). These two last games are from the library `fun`, where you can also find other utilities such as a random password generation, an alzheimer test, or a command to shutdown the computer from R.
+* **Games**. Maybe R is not as good as your game console, but is also possible to play a few games in your favorite language (I mean R, not spanish!). You can play <a href="http://cran.r-project.org/web/packages/sudoku/index.html" target="_blank">sudoku</a>, <a href="http://cran.r-project.org/web/packages/fun/index.html" target="_blank">mine sweeper</a>, or <a href="http://cran.r-project.org/web/packages/fun/index.html" target="_blank">gomoku</a> (Gomoku? I've never played that...). These two last games are from the library `fun`, where you can also find other utilities such as a random password generation, an alzheimer test, or a command to shutdown the computer from R.
 
 
 {% highlight r %}
@@ -86,7 +86,7 @@ gomoku()
 {% endhighlight %}
 
 
-* **Meme generator**. If you have been too busy writing R packages during the last years maybe you didn't notice that nowadays the internet is full of "memes" (those images combining a picture and a 'funny' message, although the concept is wider than that). Now is possible to create memes directly from R with the <a href="https://github.com/leeper/meme", target="_blank">meme</a> package (Requires installation from github using the devtools package):
+* **Meme generator**. If you have been too busy writing R packages during the last years maybe you didn't notice that nowadays the internet is full of "memes" (those images combining a picture and a 'funny' message, although the concept is wider than that). Now is possible to create memes directly from R with the <a href="https://github.com/leeper/meme" target="_blank">meme</a> package (Requires installation from github using the devtools package):
 
 
 {% highlight r %}
@@ -99,7 +99,7 @@ plot(simply <- create_meme(templates[[10]], "One does not simply", "load a packa
 
 ![plot of chunk unnamed-chunk-6]({{ site.url }}/images/unnamed-chunk-6.png) 
 
-* **Tweet**. Share with the world the happiness of being an UseR!, and publish something in twitter using the #rstats hashtag. The `twitteR` package will allow you to do it, but you need first go to <a href="https://apps.twitter.com/", target="_blank">https://apps.twitter.com/</a>, log in with your user and password, and create a new app with permissions to read, write and send direct messages. From that site get the "API key" and "API secret" values.
+* **Tweet**. Share with the world the happiness of being an UseR!, and publish something in twitter using the #rstats hashtag. The `twitteR` package will allow you to do it, but you need first go to <a href="https://apps.twitter.com/" target="_blank">https://apps.twitter.com/</a>, log in with your user and password, and create a new app with permissions to read, write and send direct messages. From that site get the "API key" and "API secret" values.
 
 
 {% highlight r %}
@@ -122,9 +122,9 @@ registerTwitterOAuth(twitCred)
 tweet("This tweet has been written using #rstats")
 {% endhighlight %}
 
-The last version of the twitteR package is located <a href="https://github.com/geoffjentry/twitteR", target="_blank">here</a>. You can also update your Facebook status using the <a href="https://github.com/pablobarbera/Rfacebook#updating-your-facebook-status-from-r", target="_blank">Rfacebook package</a>
+The last version of the twitteR package is located <a href="https://github.com/geoffjentry/twitteR" target="_blank">here</a>. You can also update your Facebook status using the <a href="https://github.com/pablobarbera/Rfacebook#updating-your-facebook-status-from-r" target="_blank">Rfacebook package</a>
 
-* **Send an email**. To finish, you can also send an email from R, for example, to make your algorithm to send you an email when is ready, and including the main results. I'm sorry I said before that we will not speak about "serious" work, but hey! you can send an email to anyone :). The package is called <a href="https://github.com/rpremraj/mailR", target="_blank">mailR</a>, and you need to know the smtp server of your email. In the case of gmail, the code is:
+* **Send an email**. To finish, you can also send an email from R, for example, to make your algorithm to send you an email when is ready, and including the main results. I'm sorry I said before that we will not speak about "serious" work, but hey! you can send an email to anyone :). The package is called <a href="https://github.com/rpremraj/mailR" target="_blank">mailR</a>, and you need to know the smtp server of your email. In the case of gmail, the code is:
 
 
 {% highlight r %}

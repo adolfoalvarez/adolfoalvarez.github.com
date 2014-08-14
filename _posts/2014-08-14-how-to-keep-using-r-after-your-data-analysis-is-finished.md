@@ -13,7 +13,7 @@ share:
 
 If you are reading this blog, probably you already know how wonderful is R to prepare, analyse, and visualise data, that's the reason why we use it and we love it. But after a long day (or even night) of hard work, your data analysis is finally ready, and you still have time and energy for something to disconnect... So what to do? You can still use R! Today we will review some code or libraries to do several things beyond torturing your data.
 
-* **Alarm**. The library <a href="https://github.com/rasmusab/beepr", target="_blank">beepr</a> can play a sound to let you know is time to stop your break, or for example, you can include it at the end of a long iteration process so your function warns you when is finished.
+* **Alarm**. The library <a href="https://github.com/rasmusab/beepr" target="_blank">beepr</a> can play a sound to let you know is time to stop your break, or for example, you can include it at the end of a long iteration process so your function warns you when is finished.
 
 
 {% highlight r %}

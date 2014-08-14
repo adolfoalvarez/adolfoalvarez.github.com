@@ -130,7 +130,7 @@ The last version of the twitteR package is located <a href="https://github.com/g
 {% highlight r %}
   install.packages("mailR", dep = T)
 library(mailR)
-send.mail(from = "YOUR-USER@gmail.com",
+send.mail(from = "USERNAME@gmail.com",
           to = "DESTINATION@mailprovider.com",
           subject = "Subject of the email",
           body = "Body of the email",

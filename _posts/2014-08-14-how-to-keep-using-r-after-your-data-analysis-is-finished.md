@@ -139,4 +139,4 @@ send.mail(from = "USERNAME@gmail.com",
           send = TRUE)
 {% endhighlight %}
 
-Alarms, tweets or emails can make your work in R more productive while you can also have some fun playing sudoku or creating a meme. What other uses of R not related with data analysis do you know? Please share them!
+Alarms, tweets, or emails can make your work in R more productive while you can also have some fun playing sudoku or creating a meme. What other uses of R not related with data analysis do you know? Please share them!

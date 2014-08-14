@@ -62,7 +62,7 @@ As you can see in this example, vectorized code is not only fast but also brief 
 
 Matrix operations are your friends
 -------------------------
-Some times vectors are not enough, so we can use matrix operations to avoid loops. For example, if we want to center a matrix (i.e. substract the global mean to each row) we can use the function `scale(x,center=T, scale=F)`, but imagine we don't have such function. What to do?
+Some times vectors are not enough, so we can use matrix operations to avoid loops. For example, if we want to center a matrix (i.e. subtract the global mean to each row) we can use the function `scale(x,center=T, scale=F)`, but imagine we don't have such function. What to do?
 
 
 {% highlight r %}
@@ -117,7 +117,7 @@ function1(A)
   {% endhighlight %}
 
 
-The first attempt to devectorize that function could be just substract the vector of means to the matrix...
+The first attempt to vectorize that function could be just subtract the vector of means to the matrix...
 
 {% highlight r %}
   function2 <- function(A) {
@@ -134,7 +134,7 @@ function2(A)
   {% endhighlight %}
 
 
-but, although elegant, this result is wrong because R tries to replicate the dimension of the matrix A repeating the vector `colMeans(A)`, and when the dimensions match each other, then substract. But this repetition is done BY COLUMNS, as you can see doing:
+but, although elegant, this result is wrong because R tries to replicate the dimension of the matrix A repeating the vector `colMeans(A)`, and when the dimensions match each other, then subtract. But this repetition is done BY COLUMNS, as you can see doing:
 
 
 {% highlight r %}
@@ -173,7 +173,7 @@ function2(A)
   {% endhighlight %}
 
 
-Another way is to use the fact that the repetition is done by columns, so we can substract `colMeans(A)` from $A^t$ and then transpose again the result:
+Another way is to use the fact that the repetition is done by columns, so we can subtract `colMeans(A)` from $$A^t$$ and then transpose again the result:
 
 {% highlight r %}
   function3 <- function(A) {
@@ -277,6 +277,6 @@ columns = c("test", "elapsed", "replications"))
   {% endhighlight r %}
 
 
-We can see that not always speed go together with readability and elegancy. Probably the most readable solution is function 1 where we see that the mean is substracted from each row, but this is very slow. Functions 2 and 3 have a good compromise between readability and speed, while base functions although easy to use, are not always the most efficient way. Finally, using matrix operations can make your code less readable but fast thanks to the Linear Algebra libraries running in the back.
+We can see that not always speed go together with readability and elegancy. Probably the most readable solution is function 1 where we see that the mean is subtracted from each row, but this is very slow. Functions 2 and 3 have a good compromise between readability and speed, while base functions although easy to use, are not always the most efficient way. Finally, using matrix operations can make your code less readable but fast thanks to the Linear Algebra libraries running in the back.
 
 If there is no way to avoid loops, one advice is to try always to loop over the smaller dimension, i.e. we can improve the efficiency of ``function1`` iterating by columns instead of by rows. Nevertheless, as Pablo Picasso said: "it took me a lifetime to paint like a child", probably when you will be a more advanced user you will come back to the cycles and then use <a href="http://www.rcpp.org/" target="_blank">Rcpp</a>, but I will speak about that in another post...

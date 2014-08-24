@@ -4,16 +4,16 @@ title: "The basics, the classics, and the magics about lists"
 modified: 2014-08-24 19:29:28 +0200
 tags: [lists]
 image:
-  feature: 
-  credit: 
-  creditlink: 
+  feature: post3.png
+  credit: Luis Roca
+  creditlink: https://www.flickr.com/photos/91693474@N03/8392688958/
 comments: TRUE
 share: 
 ---
 
 I think lists are the fourth preferred class of objects to store data in R after vectors, data frames, and matrices (take that arrays!). Nevertheless, is one of the most flexible ways to manage our data since in lists we can combine several dimensions and classes in an elegant way.
 
-In this post I will cover three aspects of the work with lists, the basics, including creation, subsetting and common operations; the classics, including the family of "*pply" functions over lists; and finally the magics, about the recent packages to work with lists.
+In this post I will cover three aspects of the work with lists: the basics, including creation, subsetting and common operations; the classics, including the family of "*pply" functions over lists; and finally the magics, about a recent package to work with lists.
 
 ## The basics.
 
@@ -388,7 +388,6 @@ list.ungroup(mylist) #Ungroup a list
 ## [22]  1.05177 -0.75267 -1.43968 -0.28571 -1.03429 -0.02815
 
 subset(mylist, x ~ x[2,1]<0) #Another way to subset a list by condition
-
 ## [[1]]
 ##         [,1]    [,2]     [,3]
 ## [1,]  0.1256  1.0518 -0.28571
@@ -396,7 +395,6 @@ subset(mylist, x ~ x[2,1]<0) #Another way to subset a list by condition
 ## [3,] -0.9122 -1.4397 -0.02815
 
 summary(mylist) #Summary
-
 ## List: mylist
 ## Length: 3
 ## ------

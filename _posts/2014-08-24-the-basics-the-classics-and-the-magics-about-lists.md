@@ -88,7 +88,6 @@ Single brackets works in the same way as in the vector case
 
 {% highlight r %}
   mylist[c(1,2)] #This returns a list with the two first elements of mylist
-
 ## $cities
 ## [1] "Poznan" "Getafe" "Curico"
 ## 
@@ -99,7 +98,6 @@ Single brackets works in the same way as in the vector case
   {% endhighlight %}
 {% highlight r %}
   mylist[[c(1,2)]] # While this returns the second element of the first list component
-
 ## [1] "Getafe"
   {% endhighlight %}
 
@@ -113,7 +111,6 @@ Let's create first a list of matrices:
   set.seed(2)
 mylist <- list(matrix(c(1:9),nrow=3),matrix(runif(9),nrow=3),matrix(rnorm(9), nrow=3))
 mylist
-
 ## [[1]]
 ##      [,1] [,2] [,3]
 ## [1,]    1    4    7
@@ -138,7 +135,6 @@ mylist
 
 {% highlight r %}
   lapply(mylist, nrow)
-
 ## [[1]]
 ## [1] 3
 ## 
@@ -153,7 +149,6 @@ mylist
 
 {% highlight r %}
   sapply(mylist, nrow)
-
 ## [1] 3 3 3
   {% endhighlight %}
 
@@ -162,7 +157,6 @@ mylist
 {% highlight r %}
   indexlist <- list(1,2,3)
 mapply(function(index,x) return(sum(x[index,])) , indexlist, mylist, SIMPLIFY=F)
-
 ## [[1]]
 ## [1] 12
 ## 
@@ -180,7 +174,6 @@ And speaking about functions and lists, the subsetting `[` is also a <a href = "
 
 {% highlight r %}
   lapply(mylist, function(x) x[2,3])
-
 ## [[1]]
 ## [1] 8
 ## 
@@ -194,7 +187,6 @@ is equivalent to:
 
 {% highlight r %}
   lapply(mylist, '[', 2,3)
-
 ## [[1]]
 ## [1] 8
 ## 
@@ -215,13 +207,11 @@ Finally, the package <a href= "http://plyr.had.co.nz/" target="_blank">`plyr`</a
 {% highlight r %}
   library(plyr)
 laply(mylist, nrow)
-
 ## [1] 3 3 3
   {% endhighlight %}
 
 {% highlight r %}
   ldply(mylist, nrow)
-
 ##   V1
 ## 1  3
 ## 2  3
@@ -230,7 +220,6 @@ laply(mylist, nrow)
 
 {% highlight r %}
   llply(mylist, nrow)
-
 ## [[1]]
 ## [1] 3
 ## 
@@ -254,19 +243,15 @@ Recently, <a href="http://renkun.me" target="_blank">Kun Ren</a> developed <a hr
   #devtools::install_github("rlist","renkun-ken")
 library(rlist)
 list.all(mylist, x ~ x[2,1]<0 ) #Get whether all list members satisfy the condition
-
 ## [1] FALSE
 
 list.any(mylist, x ~ x[2,1]<0 ) #Get whether any list member satisfies the condition
-
 ## [1] TRUE
 
 list.count(mylist, x ~ x[2,1]<0 ) #Count the number of members that meet the condition
-
 ## [1] 1
 
 list.exclude(mylist, x ~ x[2,1]<0 ) #Exclude members of a list that meet the condition.
-
 ## [[1]]
 ##      [,1] [,2] [,3]
 ## [1,]    1    4    7
@@ -280,7 +265,6 @@ list.exclude(mylist, x ~ x[2,1]<0 ) #Exclude members of a list that meet the con
 ## [3,] 0.5733 0.9435 0.4680
 
 list.filter(mylist, x ~ x[2,1]<0 ) #Filter a list by a condition.
-
 ## [[1]]
 ##         [,1]    [,2]     [,3]
 ## [1,]  0.1256  1.0518 -0.28571
@@ -288,11 +272,9 @@ list.filter(mylist, x ~ x[2,1]<0 ) #Filter a list by a condition.
 ## [3,] -0.9122 -1.4397 -0.02815
 
 list.findi(mylist, x ~ x[2,1]<0 ) #Find the indices that meet the condition
-
 ## [1] 3
 
 list.group(mylist, x ~ x[2,1]<0) #Group the list by the condition
-
 ## $`FALSE`
 ## $`FALSE`[[1]]
 ##      [,1] [,2] [,3]
@@ -315,20 +297,16 @@ list.group(mylist, x ~ x[2,1]<0) #Group the list by the condition
 ## [3,] -0.9122 -1.4397 -0.02815
 
 list.is(mylist, x ~ x[2,1]<0) #Logical indicating if the member satisfies the condition
-
 ## [1] FALSE FALSE  TRUE
 
 list.order(mylist, x ~ x[2,1]) #Reorder the list by the element [2,1]
-
 ## [1] 3 2 1
 
 list.parse("a") #Convert an object into a list
-
 ## [[1]]
 ## [1] "a"
 
 list.rbind(mylist) #Bind all list members by row
-
 ##          [,1]    [,2]     [,3]
 ##  [1,]  1.0000  4.0000  7.00000
 ##  [2,]  2.0000  5.0000  8.00000
@@ -341,7 +319,6 @@ list.rbind(mylist) #Bind all list members by row
 ##  [9,] -0.9122 -1.4397 -0.02815
 
 list.remove(mylist,1) #Remove the first element of the list
-
 ## [[1]]
 ##        [,1]   [,2]   [,3]
 ## [1,] 0.1849 0.1681 0.1292
@@ -355,7 +332,6 @@ list.remove(mylist,1) #Remove the first element of the list
 ## [3,] -0.9122 -1.4397 -0.02815
 
 list.reverse(mylist) #Reverse the order of the list
-
 ## [[1]]
 ##         [,1]    [,2]     [,3]
 ## [1,]  0.1256  1.0518 -0.28571
@@ -375,13 +351,11 @@ list.reverse(mylist) #Reverse the order of the list
 ## [3,]    3    6    9
 
 list.table(mylist, x ~ x[2,1]<0) #A table for the list by expression
-
 ## 
 ## FALSE  TRUE 
 ##     2     1
 
 list.ungroup(mylist) #Ungroup a list
-
 ##  [1]  1.00000  2.00000  3.00000  4.00000  5.00000  6.00000  7.00000
 ##  [8]  8.00000  9.00000  0.18488  0.70237  0.57333  0.16805  0.94384
 ## [15]  0.94347  0.12916  0.83345  0.46802  0.12562 -0.70986 -0.91224

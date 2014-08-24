@@ -44,7 +44,6 @@ If we will use lists inside a function or we will populate it in a loop, is more
 {% highlight r %}
   emptylist <- vector("list", 3)
 emptylist
-
 ## [[1]]
 ## NULL
 ## 
@@ -60,31 +59,26 @@ Single and double brackets to subset. To extract one element of the list we can 
 
 {% highlight r %}
   mylist[1]
-
 ## $cities
 ## [1] "Poznan" "Getafe" "Curico"
   {% endhighlight %}
 
 {% highlight r %}
   mylist[[1]]
-
 ## [1] "Poznan" "Getafe" "Curico"
   {% endhighlight %}
 
 {% highlight r %}
   class(mylist[1])
-
 ## [1] "list"
   {% endhighlight %}
 
 {% highlight r %}
   class(mylist[[1]])
-
 ## [1] "character"
   {% endhighlight %}
 
 Single brackets works in the same way as in the vector case
-
 
 {% highlight r %}
   mylist[c(1,2)] #This returns a list with the two first elements of mylist

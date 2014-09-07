@@ -26,7 +26,7 @@ Our story starts as many other R related stories... in <a href = "http://stackov
   ##[1] 1
   {% endhighlight %}
 
-Nine months later, on October 28th, 2012, <a href = "https://twitter.com/hadleywickham" target="_blank"> Hadley Wickham</a> started the `dplyr` project in <a href = "https://github.com/hadley/dplyr/" target="_blank">github</a> as an evolution of his data analysis package <a href = "https://github.com/hadley/plyr" target="_blank">`plyr`</a> (Initially the package was indeed called 'plyr2'). As he showed in three consecutive <a href = "http://bit.ly/bigrdata2" target="_blank">presentations</a> of `dplyr` in summer 2013 in Dublin, Albacete, and London, `ddply`, a function from data frames to data frames with the philosophy of Split - Apply - Combine, was the most popular function from `plyr`. 
+Nine months later, on <a href = "https://github.com/hadley/dplyr/commit/80dc69b144711ec095db1d62cf0b73e09560eaf0" target="_blank">October 28th, 2012</a>, <a href = "https://twitter.com/hadleywickham" target="_blank"> Hadley Wickham</a> started the `dplyr` project in <a href = "https://github.com/hadley/dplyr/" target="_blank">github</a> as an evolution of his data analysis package <a href = "https://github.com/hadley/plyr" target="_blank">`plyr`</a> (Initially the package was indeed called 'plyr2'). As he showed in three consecutive <a href = "http://bit.ly/bigrdata2" target="_blank">presentations</a> of `dplyr` in summer 2013 in Dublin, Albacete, and London, `ddply`, a function from data frames to data frames with the philosophy of Split - Apply - Combine, was the most popular function from `plyr`. 
 
 /home/adolfo/Mis proyectos/blog/adolfoalvarez.github.com/images/plyr.png
 
@@ -38,7 +38,8 @@ Nine months later, on October 28th, 2012, <a href = "https://twitter.com/hadleyw
 - summarise: reduce to a single row
 - arrange: re-order the rows
 
-Then, almost one year later, in October 9, 2013, the first pipe in dplyr appears. The function was denominated `chain`, but also the package introduced its first operator for the pipe: `%.%`. The idea behind the introduction of the chain was simplify notation for applying several functions to a data frame. Without the chain function, you need to read the verbas from inside out:
+Then, almost one year later, in <a href = "https://github.com/hadley/dplyr/commit/57f76ed560ac52590f7ded3d013db8fb19f7d627
+" target="_blank">October 9, 2013</a>, the first pipe in dplyr appears. The function was denominated `chain`, but also the package introduced its first operator for the pipe: `%.%`. The idea behind the introduction of the chain was simplify notation for applying several functions to a data frame. Without the chain function, you need to read the verbas from inside out:
 
 
 {% highlight r %}

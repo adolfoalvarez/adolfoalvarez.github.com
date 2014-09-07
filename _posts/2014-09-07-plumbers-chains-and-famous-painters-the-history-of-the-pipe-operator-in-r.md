@@ -3,10 +3,10 @@ layout: post
 title: "Plumbers, chains, and famous painters: The history of the pipe operator in R"
 modified: 2014-09-07 13:34:20 +0200
 tags: [dplyr, pipeR, magrittr]
-image:
-  feature: 
-  credit: 
-  creditlink: 
+image: 
+  feature: post4.jpg
+  credit: lewishamdreamer
+  creditlink: https://www.flickr.com/photos/lewishamdreamer/4656709993
 comments: true
 share: 
 ---

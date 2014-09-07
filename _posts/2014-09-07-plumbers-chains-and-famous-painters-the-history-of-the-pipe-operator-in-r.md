@@ -176,6 +176,8 @@ Stefan continued working on this pipe operation, and on <a href = "http://stacko
 
 <center><a href = "http://en.wikipedia.org/wiki/The_Treachery_of_Images" target="_blank">![Magritte]({{ site.url }}/images/MagrittePipe.jpg) </a></center>
 
+<img style="float: right" src="adolfoalvarez.cl/images/whatever.jpg">
+
 The `dplyr` package was being developed in parallel but these two developments were intended to converge. On <a href = "https://github.com/hadley/dplyr/commit/3c91ba370286025c31f624317ebce421d1c70caa" target="_blank">March 19th, 2014 </a>, the `chain` function was  deprecated on dplyr, and finally on <a href = "https://github.com/hadley/dplyr/commit/89aaa9a8b386d7e3705ffb682d89dc5bebe823c0" target="_blank">April 14th, 2014</a>, `dplyr` incorporated the `%>%` operator of magrittr, recommending it in substitution of the original `%.%`, because the former is more easy to type holding down the Shift key. Both operators are still in use by `dplyr`, although on <a href = "https://github.com/hadley/dplyr/commit/67183e2771f24f59330fdaae1bb58b627a58a8ff" target="_blank">August 1st, 2014</a>, `%.%`  was deprecated.
 
 Two weeks later, on <a href = "http://www.rstudio.com/products/rstudio/release-notes/" target="_blank">August 14th, 2014</a> , the Rstudio IDE version v0.98.1028 incorporated a shortcut for the `dplyr`/`magrittr` pipe operator `%>%` to make even more easy its use (Shift+Alt+.), although is possible that in the near future the operator shortcut <a href = "http://htmlpreview.github.io/?https://github.com/rstudio/rstudio/blob/master/src/gwt/www/docs/keyboard.htm" target="_blank"> will be changed to Ctrl+Shift+M</a>

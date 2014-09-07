@@ -28,7 +28,7 @@ Our story starts as many other R related stories... in <a href = "http://stackov
 
 Nine months later, on <a href = "https://github.com/hadley/dplyr/commit/80dc69b144711ec095db1d62cf0b73e09560eaf0" target="_blank">October 28th, 2012</a>, <a href = "https://twitter.com/hadleywickham" target="_blank"> Hadley Wickham</a> started the `dplyr` project in <a href = "https://github.com/hadley/dplyr/" target="_blank">github</a> as an evolution of his data analysis package <a href = "https://github.com/hadley/plyr" target="_blank">`plyr`</a> (Initially the package was indeed called 'plyr2'). As he showed in three consecutive <a href = "http://bit.ly/bigrdata2" target="_blank">presentations</a> of `dplyr` in summer 2013 in Dublin, Albacete, and London, `ddply`, a function from data frames to data frames with the philosophy of Split - Apply - Combine, was the most popular function from `plyr`. 
 
-/home/adolfo/Mis proyectos/blog/adolfoalvarez.github.com/images/plyr.png
+![plot of chunk unnamed-chunk-3]({{ site.url }}/images/plyr.png)
 
 `dplyr` was designed to focus also on data frames, but with the idea of being more efficient than plyr. The initial functions of dplyr in 2012 included arrange, mutate, summarise, and subset, but soon the package will evolve to its main verbs: 
 

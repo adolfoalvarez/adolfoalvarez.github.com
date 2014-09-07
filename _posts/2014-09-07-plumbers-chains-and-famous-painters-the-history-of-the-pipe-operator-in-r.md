@@ -265,7 +265,7 @@ From the package webpage we can find examples of the several uses of the `pipeR`
 ## [1] 0.8302
   {% endhighlight %}
 
-Pipes in R are here to stay and they change completely the way how we code in R, making it more simple and readable. Simple and readable means that our daily work in R will be more easy and also it can encourage new people to use our favourite language. Have you tried R piping? 
+Pipes in R are here to stay and change completely the way how we code in R, making it more simple and readable. Simple and readable means that our daily work in R will be more easy and also it can encourage new people to use our favourite language. Have you tried R piping? 
 
 
 

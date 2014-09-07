@@ -16,7 +16,7 @@ Our story starts as many other R related stories... in <a href = "http://stackov
 
 > data |> foo |> bar
 
-<a href = "http://ms.mcmaster.ca/~bolker/" target="_blank">Ben Bolker</a> answered same day and gives what can be considered the first pipe in R:
+<a href = "http://ms.mcmaster.ca/~bolker/" target="_blank">Ben Bolker</a> answered <a href = "http://stackoverflow.com/a/8897778" target="_blank">same day</a> and gives what can be considered the first pipe in R:
 
 
 {% highlight r %}

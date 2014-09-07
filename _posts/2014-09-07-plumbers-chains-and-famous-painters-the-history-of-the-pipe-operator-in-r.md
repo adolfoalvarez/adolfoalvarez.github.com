@@ -147,7 +147,7 @@ And with the operator %.% :
 
 ## magrittr
 
-Nevertheless, the `%.%` pipe would not stay in `dplyr` package for long, on December 29th, 2013, <a href = "http://www.stefanbache.dk/" target="_blank"> Stefan Bache </a>,  revisited the old stackoverflow question proposing an alternative to the original answer:
+Nevertheless, the `%.%` pipe would not stay in `dplyr` package for long time, on <a href = "http://stackoverflow.com/revisions/20828881/1" target="_blank">December 29th, 2013</a>, <a href = "http://www.stefanbache.dk/" target="_blank"> Stefan Bache </a>,  revisited the old stackoverflow question proposing an alternative to the original answer:
 
 > How about
 

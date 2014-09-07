@@ -180,6 +180,8 @@ The `dplyr` package was being developed in parallel but these two developments w
 
 Two weeks later, on <a href = "http://www.rstudio.com/products/rstudio/release-notes/" target="_blank">August 14th, 2014</a> , the Rstudio IDE version v0.98.1028 incorporated a shortcut for the `dplyr`/`magrittr` pipe operator `%>%` to make even more easy its use (Shift+Alt+.), although is possible that in the near future the operator shortcut <a href = "http://htmlpreview.github.io/?https://github.com/rstudio/rstudio/blob/master/src/gwt/www/docs/keyboard.htm" target="_blank"> will be changed to Ctrl+Shift+M</a>
 
+## PipeR
+
 The last iteration of the pipe implementation in R started on April 7th, 2014, when <a href = "https://twitter.com/renkun_ken" target="_blank">Kun Ren </a>  published on github <a href = "https://github.com/renkun-ken/pipeR/" target="_blank"> the `pipeR` package </a>, incorporating a different pipe operator `%>>%`to add more flexibility to the piping process.
 
 From the package webpage we can find examples of the several uses of the `pipeR` operator:

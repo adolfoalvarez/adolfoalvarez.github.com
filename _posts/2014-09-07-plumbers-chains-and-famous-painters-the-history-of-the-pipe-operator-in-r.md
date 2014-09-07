@@ -175,7 +175,7 @@ Nevertheless, the `%.%` pipe would not stay in `dplyr` package for long, on Dece
 
 Stefan continued working on this pipe operation, and on December 30th, 2013, he implemented in github the `plumbr` package which included the `%>%` operator. Two days later, `plumbr` would be renamed as <a href = "https://github.com/smbache/magrittr" target="_blank">`magrittr`</a>, its current name, in a clear reference of the famous painting <a href = "http://en.wikipedia.org/wiki/The_Treachery_of_Images" target="_blank">"The Treachery of Images"</a> of the Belgian painter René Magritte. 
 
-![Magritte](http://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg) 
+<a href = "http://en.wikipedia.org/wiki/The_Treachery_of_Images" target="_blank">![Magritte](http://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg) </a>
 
 The `dplyr` package was being developed in parallel but these two developments were intended to converge. On March 19th, 2014, the `chain` function was <a href = "https://github.com/hadley/dplyr/commit/3c91ba370286025c31f624317ebce421d1c70caa" target="_blank"> deprecated on dplyr</a>, and finally on April 14th, 2014, `dplyr` incorporated the `%>%` operator of magrittr, recommending it in substitution of the original `%.%`, because the former is more easy to type holding down the Shift key. Both operators are still in use by `dplyr`, although on August 1st, 2014, `%.%` <a href = "https://github.com/hadley/dplyr/commit/67183e2771f24f59330fdaae1bb58b627a58a8ff" target="_blank"> was deprecated</a>.
 

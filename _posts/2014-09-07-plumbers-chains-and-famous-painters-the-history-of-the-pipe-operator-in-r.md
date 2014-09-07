@@ -173,7 +173,7 @@ Nevertheless, the `%.%` pipe would not stay in `dplyr` package for long, on Dece
 ##        5.006        3.428        1.462        0.246
   {% endhighlight %}
 
-Stefan continued working on this pipe operation, and on December 30th, 2013, he implemented in github the `plumbr` package which included the `%>%` operator. Two days later, `plumbr` would be renamed as <a href = "https://github.com/smbache/magrittr" target="_blank">`magrittr`</a>, its current name, in a clear reference of the famous painting <a href = "http://en.wikipedia.org/wiki/The_Treachery_of_Images" target="_blank">"The Treachery of Images"</a> of the Belgian painter René Magritte. 
+Stefan continued working on this pipe operation, and on <a href = "http://stackoverflow.com/revisions/20828881/4" target="_blank">December 30th, 2013</a>, he implemented in github the `plumbr` package which included the `%>%` operator. <a href = "http://stackoverflow.com/revisions/20828881/5" target="_blank">Two days later</a>, `plumbr` would be renamed as <a href = "https://github.com/smbache/magrittr" target="_blank">`magrittr`</a>, its current name, in a clear reference of the famous painting <a href = "http://en.wikipedia.org/wiki/The_Treachery_of_Images" target="_blank">"The Treachery of Images"</a> of the Belgian painter René Magritte. 
 
 <a href = "http://en.wikipedia.org/wiki/The_Treachery_of_Images" target="_blank">![Magritte]({{ site.url }}/images/MagrittePipe.jpg) </a>
 

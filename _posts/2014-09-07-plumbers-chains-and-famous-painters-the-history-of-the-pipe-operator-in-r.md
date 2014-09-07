@@ -113,7 +113,7 @@ But with the chain function, the previous code is converted to:
 ## 14 2011    12         31 46.48 54.17
   {% endhighlight %}
 
-And with the operator %.% :
+And with the operator `%.%` :
 
 {% highlight r %}
   hflights %.%

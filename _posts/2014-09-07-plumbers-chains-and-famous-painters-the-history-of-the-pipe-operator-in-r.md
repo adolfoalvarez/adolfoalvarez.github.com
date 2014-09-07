@@ -7,11 +7,10 @@ image:
   feature: 
   credit: 
   creditlink: 
-comments: 
+comments: true
 share: 
 ---
-
-Our story starts as many other R related stories... in <a href = "http://stackoverflow.com" target="_blank">stackoverflow</a>. On January 17th, 2012, an anonymous user "user4" asked the following question:
+Our story starts as many other R related stories... in <a href = "http://stackoverflow.com" target="_blank">stackoverflow</a>. On <a href = "http://stackoverflow.com/questions/8896820/how-to-implement-fs-forward-pipe-operator-in-r" target="_blank">January 17th, 2012</a>, an anonymous user "user4" asked the following question:
 
 > How can you implement F#'s forward pipe operator in R? The operator makes it possible to easily chain a sequence of calculations. For example, when you have an input data and want to call functions foo and bar in sequence, you can write: 
 

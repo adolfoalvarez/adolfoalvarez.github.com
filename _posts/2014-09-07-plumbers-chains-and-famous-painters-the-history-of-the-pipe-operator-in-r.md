@@ -40,7 +40,7 @@ Nine months later, on <a href = "https://github.com/hadley/dplyr/commit/80dc69b1
 - arrange: re-order the rows
 
 Then, almost one year later, in <a href = "https://github.com/hadley/dplyr/commit/57f76ed560ac52590f7ded3d013db8fb19f7d627
-" target="_blank">October 9, 2013</a>, the first pipe in dplyr appears. The function was denominated `chain`, but also the package introduced its first operator for the pipe: `%.%`. The idea behind the introduction of the chain was simplify notation for applying several functions to a data frame. Without the chain function, you need to read the verbas from inside out:
+" target="_blank">October 9, 2013</a>, the first pipe in dplyr appears. The function was denominated `chain`, but also the package introduced its first operator for the pipe: `%.%`. The idea behind the introduction of the chain was simplify notation for applying several functions to a data frame. Without the chain function, you need to read the verbs from inside out:
 
 
 {% highlight r %}

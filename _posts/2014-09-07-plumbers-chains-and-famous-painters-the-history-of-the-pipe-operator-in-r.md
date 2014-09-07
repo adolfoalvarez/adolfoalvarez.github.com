@@ -26,6 +26,8 @@ Our story starts as many other R related stories... in <a href = "http://stackov
   ##[1] 1
   {% endhighlight %}
 
+## dplyr.
+
 Nine months later, on <a href = "https://github.com/hadley/dplyr/commit/80dc69b144711ec095db1d62cf0b73e09560eaf0" target="_blank">October 28th, 2012</a>, <a href = "https://twitter.com/hadleywickham" target="_blank"> Hadley Wickham</a> started the `dplyr` project in <a href = "https://github.com/hadley/dplyr/" target="_blank">github</a> as an evolution of his data analysis package <a href = "https://github.com/hadley/plyr" target="_blank">`plyr`</a> (Initially the package was indeed called 'plyr2'). As he showed in three consecutive <a href = "http://bit.ly/bigrdata2" target="_blank">presentations</a> of `dplyr` in summer 2013 in Dublin, Albacete, and London, `ddply`, a function from data frames to data frames with the philosophy of Split - Apply - Combine, was the most popular function from `plyr`. 
 
 ![plot of chunk unnamed-chunk-3]({{ site.url }}/images/plyr.png)
@@ -144,6 +146,8 @@ And with the operator %.% :
 ## 14 2011    12         31 46.48 54.17
   {% endhighlight %}
 
+## magrittr
+
 Nevertheless, the `%.%` pipe would not stay in `dplyr` package for long, on December 29th, 2013, <a href = "http://www.stefanbache.dk/" target="_blank"> Stefan Bache </a>,  revisited the old stackoverflow question proposing an alternative to the original answer:
 
 > How about
@@ -171,7 +175,8 @@ Nevertheless, the `%.%` pipe would not stay in `dplyr` package for long, on Dece
 
 Stefan continued working on this pipe operation, and on December 30th, 2013, he implemented in github the `plumbr` package which included the `%>%` operator. Two days later, `plumbr` would be renamed as <a href = "https://github.com/smbache/magrittr" target="_blank">`magrittr`</a>, its current name, in a clear reference of the famous painting <a href = "http://en.wikipedia.org/wiki/The_Treachery_of_Images" target="_blank">"The Treachery of Images"</a> of the Belgian painter René Magritte. 
 
- 
+![Magritte](http://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg) 
+
 The `dplyr` package was being developed in parallel but these two developments were intended to converge. On March 19th, 2014, the `chain` function was <a href = "https://github.com/hadley/dplyr/commit/3c91ba370286025c31f624317ebce421d1c70caa" target="_blank"> deprecated on dplyr</a>, and finally on April 14th, 2014, `dplyr` incorporated the `%>%` operator of magrittr, recommending it in substitution of the original `%.%`, because the former is more easy to type holding down the Shift key. Both operators are still in use by `dplyr`, although on August 1st, 2014, `%.%` <a href = "https://github.com/hadley/dplyr/commit/67183e2771f24f59330fdaae1bb58b627a58a8ff" target="_blank"> was deprecated</a>.
 
 Two weeks later, on August 14th, 2014, the Rstudio IDE version v0.98.1028 incorporated a shortcut for the `dplyr`/`magrittr` pipe operator `%>%` to make even more easy its use (Shift+Alt+.), although is possible that in the near future the operator shortcut <a href = "http://htmlpreview.github.io/?https://github.com/rstudio/rstudio/blob/master/src/gwt/www/docs/keyboard.htm" target="_blank"> will be changed to Ctrl+Shift+M</a>

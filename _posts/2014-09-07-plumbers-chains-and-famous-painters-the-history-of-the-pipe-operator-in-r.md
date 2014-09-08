@@ -27,7 +27,7 @@ Our story starts as many other R related stories... in <a href = "http://stackov
 
 ## dplyr.
 
-Nine months later, on <a href = "https://github.com/hadley/dplyr/commit/80dc69b144711ec095db1d62cf0b73e09560eaf0" target="_blank">October 28th, 2012</a>, <a href = "https://twitter.com/hadleywickham" target="_blank"> Hadley Wickham</a> started the `dplyr` project in <a href = "https://github.com/hadley/dplyr/" target="_blank">github</a> as an evolution of his data analysis package <a href = "https://github.com/hadley/plyr" target="_blank">`plyr`</a> (Initially the package was indeed called 'plyr2'). As he showed in three consecutive <a href = "http://bit.ly/bigrdata2" target="_blank">presentations</a> of `dplyr` in summer 2013 in Dublin, Albacete, and London, `ddply`, a function from data frames to data frames with the philosophy of Split - Apply - Combine, was the most popular function from `plyr`. 
+Nine months later, on <a href = "https://github.com/hadley/dplyr/commit/80dc69b144711ec095db1d62cf0b73e09560eaf0" target="_blank">October 28th, 2012</a>, <a href = "https://twitter.com/hadleywickham" target="_blank"> Hadley Wickham</a> started the `dplyr` project in <a href = "https://github.com/hadley/dplyr/" target="_blank">github</a> as an evolution of his data analysis package <a href = "https://github.com/hadley/plyr" target="_blank">`plyr`</a> (Initially the package was indeed called 'plyr2'). As he showed in three consecutive <a href = "http://bit.ly/bigrdata2" target="_blank">presentations</a> of `dplyr` during summer 2013 in Dublin, Albacete, and London, `ddply`, a function from data frames to data frames with the philosophy of Split - Apply - Combine, was the most popular function from `plyr`. 
 
 ![plot of chunk unnamed-chunk-3]({{ site.url }}/images/plyr.png)
 
@@ -147,7 +147,7 @@ And with the operator `%.%` :
 
 ## magrittr
 
-Nevertheless, the `%.%` pipe would not stay in `dplyr` package for long time, on <a href = "http://stackoverflow.com/revisions/20828881/1" target="_blank">December 29th, 2013</a>, <a href = "http://www.stefanbache.dk/" target="_blank"> Stefan Bache </a>,  revisited the old stackoverflow question proposing an alternative to the original answer:
+Nevertheless, the `%.%` pipe would not stay in `dplyr` package for long time, on <a href = "http://stackoverflow.com/revisions/20828881/1" target="_blank">December 29th, 2013</a>, <a href = "http://www.stefanbache.dk/" target="_blank"> Stefan Bache </a> revisited the old stackoverflow question proposing an alternative to the original answer:
 
 > How about
 
@@ -267,6 +267,16 @@ From the package webpage we can find examples of the several uses of the `pipeR`
 
 Pipes in R are here to stay and change completely the way how we code in R, making it more simple and readable. Simple and readable means that our daily work in R will be more easy and also it can encourage new people to use our favourite language. Have you tried R piping? 
 
+**Edited September 08, 2014**
+Notes (Thanks to Hadley Wickham comments):
+
+- On April 5, 2012, <a href = "https://twitter.com/perisaccadic" target="_blank">Peter Meilstrup</a> started the package `ptools` as a way to collect "various data manipulation and programming utilities". One of those utilities was the function `chain`, implementing a way to pipe the arguments. The current function of the `chain` function can be found in the <a href = "https://github.com/crowding/vadr" target="_blank">`vadr` package</a> from the same author. 
+
+- On  <a href = "http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/" target="_blank">this post</a>, <a href = "http://www.stefanbache.dk/" target="_blank">Stefan Bache</a> gives his version about how he created `magrittr` and the convergence of the pipe operators between `dplyr` and `magrittr`.
+
+- In the first comment of the <a href = "http://blog.rstudio.org/2014/01/17/introducing-dplyr/" target="_blank">announcing post</a> of `dplyr` by the RStudio blog, Stefan Bache let Hadley Wickham know about magrittr operator.
+
+- The `%>%` operator should be <a href = "https://twitter.com/hadleywickham/status/507643720401842176" target="_blank">pronounced "then"</a>.
 
 
 

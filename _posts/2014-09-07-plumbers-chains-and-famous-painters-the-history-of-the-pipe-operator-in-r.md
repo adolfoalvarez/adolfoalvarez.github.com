@@ -271,7 +271,7 @@ Pipes in R are here to stay and change completely the way how we code in R, maki
 
 Notes (Thanks to Hadley Wickham comments):
 
-- On April 5, 2012, <a href = "https://twitter.com/perisaccadic" target="_blank">Peter Meilstrup</a> started the package `ptools` as a way to collect "various data manipulation and programming utilities". One of those utilities was the function `chain`, implementing a way to pipe the arguments. The current function of the `chain` function can be found in the <a href = "https://github.com/crowding/vadr" target="_blank">`vadr` package</a> from the same author. 
+- On April 5, 2012, <a href = "https://twitter.com/perisaccadic" target="_blank">Peter Meilstrup</a> started the package `ptools` as a way to collect "various data manipulation and programming utilities". One of those utilities was the function `chain`, implementing a way to pipe the arguments. The current version of the `chain` function can be found in the <a href = "https://github.com/crowding/vadr" target="_blank">`vadr` package</a> from the same author. 
 
 - On  <a href = "http://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/" target="_blank">this post</a>, Stefan Bache gives his version about how he created `magrittr` and the convergence of the pipe operators between `dplyr` and `magrittr`.
 

@@ -268,6 +268,7 @@ From the package webpage we can find examples of the several uses of the `pipeR`
 Pipes in R are here to stay and change completely the way how we code in R, making it more simple and readable. Simple and readable means that our daily work in R will be more easy and also it can encourage new people to use our favourite language. Have you tried R piping? 
 
 **Edited September 08, 2014**
+
 Notes (Thanks to Hadley Wickham comments):
 
 - On April 5, 2012, <a href = "https://twitter.com/perisaccadic" target="_blank">Peter Meilstrup</a> started the package `ptools` as a way to collect "various data manipulation and programming utilities". One of those utilities was the function `chain`, implementing a way to pipe the arguments. The current function of the `chain` function can be found in the <a href = "https://github.com/crowding/vadr" target="_blank">`vadr` package</a> from the same author. 

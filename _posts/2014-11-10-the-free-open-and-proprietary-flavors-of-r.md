@@ -232,6 +232,13 @@ Some of these versions are:
 
 - <a href="http://www.oracle.com/technetwork/database/database-technologies/bdc/r-advanalytics-for-hadoop/overview/index.html" target="_blank">Oracle R Advanced Analytics for Hadoop</a>. Equivalent to R Enterprise but to be integrated with Hadoop.
 
+- <a href="http://www.renjin.org/" target="_blank">Renjin</a>. This is an Open Source implementation of R for the Java Virtual Machine (JVM). Commercial support is available.
+
+- <a href="http://www.pqr-project.org/" target="_blank">pqR</a>. A "pretty quick version" of R, based on R-2.15.0 and licensed under GPL.
+
+- <a href="https://bitbucket.org/allr/fastr/wiki/Home" target="_blank">FastR</a>. This version is an Open Source implementation of the R Language in Java.
+
+- <a href="https://github.com/jtalbot/riposte/blob/master/README.md" target="_blank">Riposte</a>. C++ JIT Open Source implementation of R.
 
 - <a href="http://xlsolutions-corp.com/order.aspx" target="_blank">R-Plus</a>. This company claims their product is the "Real R", but no detailed information can be found in their webpage. 
 
@@ -244,3 +251,8 @@ The fact that R is a free software has been crucial to its development and adopt
 Nevertheless, those who require technical support or flawless integration with big data implementations can find high standard solutions provided by reputed companies such as Revolution R or Oracle. The adoption of R in the business world is now a reality, and besides the referred examples, many other big IT/analytics firms are recommending to integrate R with their systems. But we will speak about that integration in a further post...
 
 Thank you for reading, and if you like the post please let your best friends know!
+
+*Edit* 
+- Thanks to Hadley Wickham for mentioning that there is available one <a href="http://cran.R-project.org/web/packages/packages.rds" target="_blank">.rds file</a> with information of CRAN packages .
+
+- Thanks to Noam Ross for mentioning some R versions not included in the first version of this post. A comparison of some R versions can be found <a href="http://blog.revolutionanalytics.com/2014/07/dsc-2014.html" target="_blank">here</a> 

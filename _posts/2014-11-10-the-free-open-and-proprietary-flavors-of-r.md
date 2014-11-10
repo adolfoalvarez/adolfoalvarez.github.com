@@ -17,7 +17,7 @@ R was announced to the world on August 4th, 1993, when Ross Ihaka sent the follo
 
 > About a year ago Robert Gentleman and I considered the problem of obtaining decent statistical software for our undergraduate Macintosh lab. After considering the options, we decided that the most satisfactory alternative was to write our own. We started by writing a small lisp interpreter. Next we expanded its data structures with atomic vector types and altered its evaluation semantics to include lazy evaluation of closure arguments and argument binding by tag as well as order. Finally we added some syntactic sugar to make it look somewhat like S. We call the result "R".
 
-As referred by prof. Ihaka in the <a href="https://www.stat.auckland.ac.nz/~ihaka/downloads/Interface98.pdf", target="_blank">"R: Past and future"</a> article, only in june of 1995 R became Free Software, when the source code was released under the <a href="http://www.r-project.org/COPYING", target="_blank">GNU General Public License (GPL)</a>, from the <a href="http://www.fsf.org/" , target="_blank">Free Software Foundation</a>. Following the FSF definition, "a program is free software, for you, a particular user, if:
+As referred by prof. Ihaka in the <a href="https://www.stat.auckland.ac.nz/~ihaka/downloads/Interface98.pdf", target="_blank">"R: Past and future"</a> article, only in june of 1995 R became Free Software, when the source code was released under the <a href="http://www.r-project.org/COPYING", target="_blank">GNU General Public License (GPL)</a>, from the <a href="http://www.fsf.org/" target="_blank">Free Software Foundation</a>. Following the FSF definition, "a program is free software, for you, a particular user, if:
 
 - You have the freedom to run the program as you wish, for any purpose.
 - You have the freedom to modify the program to suit your needs. (To make this freedom effective in practice, you must have access to the source code, since making changes in a program without having the source code is exceedingly difficult.)
@@ -26,9 +26,9 @@ As referred by prof. Ihaka in the <a href="https://www.stat.auckland.ac.nz/~ihak
 
 ## Free and non-free extensions (a.k.a Packages)
 
-Following the conditions of the GPL, to create a commercial (i.e. non free) package is perfectly possible, as long as you are not modifiyng or including code from another package which is licensed under GPL. The R Foundation clarify their position respects to non free packages in <a href="https://stat.ethz.ch/pipermail/r-devel/2009-May/053248.html" , target="_blank">this statement</a>. 
+Following the conditions of the GPL, to create a commercial (i.e. non free) package is perfectly possible, as long as you are not modifiyng or including code from another package which is licensed under GPL. The R Foundation clarify their position respects to non free packages in <a href="https://stat.ethz.ch/pipermail/r-devel/2009-May/053248.html" target="_blank">this statement</a>. 
 
-Nevertheless, the use of FOSS (Free or open source software) is <a href="http://cran.r-project.org/doc/manuals/r-release/R-exts.html#Licensing" , target="_blank">encouraged in CRAN</a>, and some of the common options for developers are the <a href="http://cran.r-project.org/web/licenses/" , target="_blank">GPL, MIT, or BSD licenses</a>. A similar guideline is followed by <a href="http://www.bioconductor.org/developers/package-guidelines/#license" , target="_blank"> Bioconductor</a>, and <a href="https://help.github.com/articles/open-source-licensing/" , target="_blank">Github</a>. 
+Nevertheless, the use of FOSS (Free or open source software) is <a href="http://cran.r-project.org/doc/manuals/r-release/R-exts.html#Licensing" target="_blank">encouraged in CRAN</a>, and some of the common options for developers are the <a href="http://cran.r-project.org/web/licenses/" target="_blank">GPL, MIT, or BSD licenses</a>. A similar guideline is followed by <a href="http://www.bioconductor.org/developers/package-guidelines/#license" target="_blank"> Bioconductor</a>, and <a href="https://help.github.com/articles/open-source-licensing/" target="_blank">Github</a>. 
 
 Let's write some code to analyze the different licenses used by the packages submitted to CRAN:
 
@@ -362,7 +362,7 @@ The vast majority of packages chose GPL, LGPL, or other free software licenses. 
 ## 15                   r2stl                CC BY-NC-SA 3.0
 {% endhighlight %}
 
-Other special license cases are those given by a "file License", where the license is specified in a file (<a href="http://cran.r-project.org/web/packages/sparseHessianFD/LICENSE" , target="_blank">Example</a>), or the "Unlimited" license(<a href="http://cran.r-project.org/web/packages/learningr/" , target="_blank">Example</a>), which is actually not unlimited, but restricted to national laws (where most cases "All rights reserved" is implied). For those packages is better to contact the authors to modify the code or use it for commercial purposes.
+Other special license cases are those given by a "file License", where the license is specified in a file (<a href="http://cran.r-project.org/web/packages/sparseHessianFD/LICENSE" target="_blank">Example</a>), or the "Unlimited" license(<a href="http://cran.r-project.org/web/packages/learningr/" target="_blank">Example</a>), which is actually not unlimited, but restricted to national laws (where most cases "All rights reserved" is implied). For those packages is better to contact the authors to modify the code or use it for commercial purposes.
 
 ## The other open and commercial flavors of R
 
@@ -370,24 +370,24 @@ Two of the problems that companies can found when using R for business are its l
 
 Some of these versions are:
 
-- <a href="http://www.revolutionanalytics.com/revolution-r-open" , target="_blank">Revolution R Open</a>. This is the Open Source version of Revolution R. It includes the <a href="http://en.wikipedia.org/wiki/Math_Kernel_Library" , target="_blank">MKL library</a> for faster computation (specially in Windows), <a href="http://projects.revolutionanalytics.com/documents/rrt/rrtpkgs/" , target="_blank">the Reproducible R Toolkit</a>(a set of tools to ensure reproducibility), and support.
+- <a href="http://www.revolutionanalytics.com/revolution-r-open" target="_blank">Revolution R Open</a>. This is the Open Source version of Revolution R. It includes the <a href="http://en.wikipedia.org/wiki/Math_Kernel_Library" target="_blank">MKL library</a> for faster computation (specially in Windows), <a href="http://projects.revolutionanalytics.com/documents/rrt/rrtpkgs/" target="_blank">the Reproducible R Toolkit</a>(a set of tools to ensure reproducibility), and support.
 
-- <a href="http://www.revolutionanalytics.com/plus" , target="_blank">Revolution R Plus</a>. Available via an annual subscription, it includes Revolution R Open, and some open source packages developed by Revolution: <a href="http://projects.revolutionanalytics.com/deployr/" , target="_blank">DeployR</a>, <a href="http://projects.revolutionanalytics.com/parallelr/" , target="_blank">ParallelR</a>, and <a href="https://github.com/RevolutionAnalytics/RHadoop/wiki" , target="_blank">RHadoop</a>; plus technical support service.
+- <a href="http://www.revolutionanalytics.com/plus" target="_blank">Revolution R Plus</a>. Available via an annual subscription, it includes Revolution R Open, and some open source packages developed by Revolution: <a href="http://projects.revolutionanalytics.com/deployr/" target="_blank">DeployR</a>, <a href="http://projects.revolutionanalytics.com/parallelr/" target="_blank">ParallelR</a>, and <a href="https://github.com/RevolutionAnalytics/RHadoop/wiki" target="_blank">RHadoop</a>; plus technical support service.
 
-- <a href="http://www.revolutionanalytics.com/revolution-r-enterprise" , target="_blank">Revolution R Enterprise</a>. This version is oriented to big data analytics, including all the previous versions plus the licensed packages <a href="http://deployr.revolutionanalytics.com/" , target="_blank">RRE DeployR</a>, <a href="http://www.revolutionanalytics.com/revolution-r-enterprise-scaler" , target="_blank">RRE ScaleR</a>, and <a href="http://www.revolutionanalytics.com/revolution-r-enterprise-distributedr" , target="_blank">RRE DistributedR</a>.
+- <a href="http://www.revolutionanalytics.com/revolution-r-enterprise" target="_blank">Revolution R Enterprise</a>. This version is oriented to big data analytics, including all the previous versions plus the licensed packages <a href="http://deployr.revolutionanalytics.com/" target="_blank">RRE DeployR</a>, <a href="http://www.revolutionanalytics.com/revolution-r-enterprise-scaler" target="_blank">RRE ScaleR</a>, and <a href="http://www.revolutionanalytics.com/revolution-r-enterprise-distributedr" target="_blank">RRE DistributedR</a>.
 
-- <a href="http://spotfire.tibco.com/discover-spotfire/what-does-spotfire-do/predictive-analytics/tibco-enterprise-runtime-for-r-terr" , target="_blank">TIBCO Enterprise Runtime for R (TERR)</a>. A TIBCO version of R to be integrated on their TIBCO Spotfire analytics software.
+- <a href="http://spotfire.tibco.com/discover-spotfire/what-does-spotfire-do/predictive-analytics/tibco-enterprise-runtime-for-r-terr" target="_blank">TIBCO Enterprise Runtime for R (TERR)</a>. A TIBCO version of R to be integrated on their TIBCO Spotfire analytics software.
 
-- <a href="http://www.oracle.com/technetwork/database/database-technologies/r/r-distribution/overview/index.html" , target="_blank">Oracle R Distribution</a>. This free version offers support for dynamic loading of linear algebra libraries (<a href="http://software.intel.com/en-us/intel-mkl" , target="_blank">MKL</a>, <a href="http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/" , target="_blank">ACML</a>, and <a href="http://www.oracle.com/technetwork/server-storage/solarisstudio/documentation/computing-jsp-140290.html" , target="_blank">SPL</a>)
+- <a href="http://www.oracle.com/technetwork/database/database-technologies/r/r-distribution/overview/index.html" target="_blank">Oracle R Distribution</a>. This free version offers support for dynamic loading of linear algebra libraries (<a href="http://software.intel.com/en-us/intel-mkl" target="_blank">MKL</a>, <a href="http://developer.amd.com/tools-and-sdks/cpu-development/amd-core-math-library-acml/" target="_blank">ACML</a>, and <a href="http://www.oracle.com/technetwork/server-storage/solarisstudio/documentation/computing-jsp-140290.html" target="_blank">SPL</a>)
 
-- <a href="http://www.oracle.com/technetwork/database/database-technologies/r/r-enterprise/overview/index.html" , target="_blank">Oracle R Enterprise</a>.  This version integrates R with the Oracle data base.
+- <a href="http://www.oracle.com/technetwork/database/database-technologies/r/r-enterprise/overview/index.html" target="_blank">Oracle R Enterprise</a>.  This version integrates R with the Oracle data base.
 
-- <a href="http://www.oracle.com/technetwork/database/database-technologies/bdc/r-advanalytics-for-hadoop/overview/index.html" , target="_blank">Oracle R Advanced Analytics for Hadoop</a>. Equivalent to R Enterprise but to be integrated with Hadoop.
+- <a href="http://www.oracle.com/technetwork/database/database-technologies/bdc/r-advanalytics-for-hadoop/overview/index.html" target="_blank">Oracle R Advanced Analytics for Hadoop</a>. Equivalent to R Enterprise but to be integrated with Hadoop.
 
 
-- <a href="http://xlsolutions-corp.com/order.aspx" , target="_blank">R-Plus</a>. This company claims their product is the "Real R", but no detailed information can be found in their webpage. 
+- <a href="http://xlsolutions-corp.com/order.aspx" target="_blank">R-Plus</a>. This company claims their product is the "Real R", but no detailed information can be found in their webpage. 
 
-- Other commercial software using R as engine: <a href="http://www.informationbuilders.com/products/webfocus/predictivemodeling" , target="_blank">WebFOCUS RStat</a>, <a href="http://www.statconn.com/" , target="_blank">Statconn</a>.
+- Other commercial software using R as engine: <a href="http://www.informationbuilders.com/products/webfocus/predictivemodeling" target="_blank">WebFOCUS RStat</a>, <a href="http://www.statconn.com/" target="_blank">Statconn</a>.
 
 ## To finish
 

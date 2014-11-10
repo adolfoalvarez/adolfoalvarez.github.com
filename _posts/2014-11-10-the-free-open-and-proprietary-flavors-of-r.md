@@ -4,12 +4,19 @@ title: "The free, open, and proprietary flavors of R"
 modified: 2014-11-10 16:43:16 +0100
 tags: [licenses, FOSS, commercial]
 image:
-  feature: 
-  credit: 
-  creditlink: 
+  feature: post5.png
+  credit: lonelyradio
+  creditlink: https://www.flickr.com/photos/lonelyradio/8415908840/
 comments: true
 share: 
 ---
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@adolfoalvarez">
+<meta name="twitter:creator" content="@adolfoalvarez">
+<meta name="twitter:url" content="http://adolfoalvarez.cl/the-free-open-and-proprietary-flavors-of-r/">
+<meta name="twitter:title" content="Hello">
+<meta name="twitter:description" content="This is a test">
+<meta name="twitter:image" content="http://adolfoalvarez.cl/images/logoblog.png">
 
 ## R: A free software project.
 
@@ -74,8 +81,7 @@ Now we have a data frame with the information of the available packages on CRAN.
   }
   return(output)
 }
-#packages <- mutate(packages, Licenses=obtainLicenses(Package))
-load("packages9914.Rdata")
+packages <- mutate(packages, Licenses=obtainLicenses(Package)) #Warning: Very slow!
 packages %>%
   select(Package, Licenses)
 

@@ -14,9 +14,9 @@ share:
 <meta name="twitter:site" content="@adolfoalvarez">
 <meta name="twitter:creator" content="@adolfoalvarez">
 <meta name="twitter:url" content="http://adolfoalvarez.cl/the-free-open-and-proprietary-flavors-of-r/">
-<meta name="twitter:title" content="Hello">
-<meta name="twitter:description" content="This is a test">
-<meta name="twitter:image" content="http://adolfoalvarez.cl/images/logoblog.png">
+<meta name="twitter:title" content="The free, open, and proprietary flavors of R">
+<meta name="twitter:description" content="R was announced to the world on August 4th, 1993, when Ross Ihaka sent the following email to the S-news email list...">
+<meta name="twitter:image" content="http://adolfoalvarez.cl/images/post5.png">
 
 ## R: A free software project.
 

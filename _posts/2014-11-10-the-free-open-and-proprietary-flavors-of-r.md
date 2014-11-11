@@ -15,7 +15,7 @@ share:
 <meta name="twitter:creator" content="@adolfoalvarez">
 <meta name="twitter:url" content="http://adolfoalvarez.cl/the-free-open-and-proprietary-flavors-of-r/">
 <meta name="twitter:title" content="The free, open, and proprietary flavors of R">
-<meta name="twitter:description" content="R was announced to the world on August 4th, 1993, when Ross Ihaka sent the following email to the S-news email list...">
+<meta name="twitter:description" content="In this fifth entry of my blog about R and analytics, I write about the origins of R as a free software project, an analysis of the several licenses used by packages in CRAN (including the use of rvest, dplyr, and ggvis packages), and a list of other commercial or open projects derived from R.">
 <meta name="twitter:image" content="http://adolfoalvarez.cl/images/post5.png">
 
 ## R: A free software project.

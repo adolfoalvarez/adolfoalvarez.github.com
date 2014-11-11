@@ -252,8 +252,8 @@ Nevertheless, those who require technical support or flawless integration with b
 
 Thank you for reading, and if you like the post please let your best friends know!
 
-*Edit* 
+*Edit 2014-11-10* 
 
-- Thanks to Hadley Wickham for mentioning that there is available one <a href="http://cran.R-project.org/web/packages/packages.rds" target="_blank">.rds file</a> with information of CRAN packages .
+- Thanks to <a href="https://twitter.com/hadleywickham" target="_blank">Hadley Wickham </a> for mentioning that there is available a <a href="http://cran.R-project.org/web/packages/packages.rds" target="_blank">.rds file</a> with information of CRAN packages .
 
-- Thanks to Noam Ross for mentioning some R versions not included in the first version of this post. A comparison of some R versions can be found <a href="http://blog.revolutionanalytics.com/2014/07/dsc-2014.html" target="_blank">here</a> 
+- Thanks to <a href="https://twitter.com/noamross" target="_blank">Noam Ross</a> for mentioning some R versions not included in the first version of this post. A comparison of some R versions can be found <a href="http://blog.revolutionanalytics.com/2014/07/dsc-2014.html" target="_blank">here</a> 

@@ -268,7 +268,7 @@ This is the system to ease the data processing, it includes the new generation v
 - <a href="https://github.com/hadley/assertthat" target="_blank">assertthat</a>: User friendly assertions for R.
 - <a href="https://github.com/hadley/bigrquery" target="_blank">bigrquery</a>: An interface to Google's bigquery from R.
 - <a href="https://github.com/dgrtwo/broom" target="_blank">broom</a>: Convert statistical analysis objects from R into tidy format.
-- <a href="https://github.com/hadley/dplyr" target="_blank">dplyr</a>: Plyr specialised for data frames: faster & with remote datastores, .
+- <a href="https://github.com/hadley/dplyr" target="_blank">dplyr</a>: Plyr specialised for data frames: faster & with remote datastores.
 - <a href="https://github.com/hadley/lazyeval" target="_blank">lazyeval</a>: A strategy for doing non-standard evaluation (NSE) in R.
 - <a href="https://github.com/rstats-db/RMySQL" target="_blank">RMySQL</a>: An R interface for MySQL.
 - <a href="https://github.com/rstats-db/RSQLite" target="_blank">RSQLite</a>: R interface for SQLite.

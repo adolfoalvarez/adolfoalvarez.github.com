@@ -184,7 +184,7 @@ We detected three communities or groups of packages, let me call them "systems" 
 
 **Main stars: ggplot2, plyr**
 
-This is the system of the "classic" tools of the Hadleyverse, with two main groups, the graphical tools leaded by "ggplot2", and the data transformation leaded by "plyr". Both plyr and ggplot2 have several years of development, and they are well documented and widely used by the community, nevertheless recently both packages have evolved into "dplyr" and "ggvis", so there is less development efforts over them, and can be expected that they will be completely replaced by the new generation in the middle term.
+This is the system of the "classic" tools of the Hadleyverse, with two main groups, the graphical tools leaded by "ggplot2", and the data transformation leaded by "plyr". Both plyr and ggplot2 have several years of development, and they are well documented and widely used by the community, although recently both packages have evolved into "dplyr" and "ggvis", so there is less development efforts over them, and can be expected that they will be completely replaced by the new generation in the middle term.
 
 **Tools for graphics:**
 

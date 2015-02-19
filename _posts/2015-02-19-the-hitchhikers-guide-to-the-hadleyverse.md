@@ -305,7 +305,7 @@ Besides those packages in CRAN, taking a look into the github repositories of Ha
 
 I hope you have enjoyed this short guide to the Hadleyverse, and I wish you can now travel with more confidence through it. For sure you will find a package which suits your needs or will make your life more easy, just give them a chance!. And in case you are asking how is possible for a single person to develop so many packages, maybe is because <a href="http://hadley.wickham.usesthis.com/" target="_blank">he uses this</a>, or maybe because he understands <a href="https://twitter.com/hadleywickham/status/565516733516349441" target="_blank">the power of frustration</a>, or maybe because he just wants <a href="http://bulletin.imstat.org/2014/12/hadley-wickham-impact-the-world-by-being-useful/" target="_blank">to impact the world by being useful</a>. But maybe is better to let himself to answer that question <a href="http://www.quora.com/How-is-Hadley-Wickham-able-to-contribute-so-much-to-R-particularly-in-the-form-of-packages" target="_blank">here</a>. 
 
-Thank you for reading and thanks Hadley Wickham for your Hadleyverse!
+Thank you for reading and thanks Hadley Wickham for the Hadleyverse!
 
 42.
 

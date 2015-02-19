@@ -176,7 +176,8 @@ plot(g, margin=-0.1, layout=layout)
 dev.off()
   {% endhighlight %}
 
-![hadleyverse]({{ site.url }}/images/hadleyverse.png)
+<a href = "{{ site.url }}/images/hadleyverse.png" target="_blank">![hadleyverse]({{ site.url }}/images/hadleyverse.png) </a>
+
 
 We detected three communities or groups of packages, let me call them "systems" of the Hadleyverse, and some set of isolated dots representing those packages which are not related to any other, so I will call them "comets". 
 

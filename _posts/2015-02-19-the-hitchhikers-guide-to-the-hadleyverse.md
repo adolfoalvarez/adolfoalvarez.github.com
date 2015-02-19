@@ -239,7 +239,7 @@ In this system you will find four main groups: Tools to help developing R packag
 
 - <a href="https://github.com/hadley/evaluate" target="_blank">evaluate</a>: A version of eval for R that returns more information about what happened.
 - <a href="https://github.com/hadley/testthat" target="_blank">testthat</a>: An R package to make testing fun.
-- <a href="https://github.com/smbache/magrittr" target="_blank">magrittr</a>: R package to bring forward-piping features ala F#'s "|>" operator. Ceci n'est pas un pipe.
+- <a href="https://github.com/smbache/magrittr" target="_blank">magrittr</a>: R package to bring forward-piping features ala F#'s "\\|>" operator. Ceci n'est pas un pipe.
 - <a href="https://github.com/hadley/memoise" target="_blank">memoise</a>: Easy memoisation for R.
 - <a href="https://github.com/ggobi/plumbr" target="_blank">plumbr</a>: Mutable dynamic data structures for R.
 - <a href="https://github.com/hadley/pryr" target="_blank">pryr</a>: Pry open the covers of R.

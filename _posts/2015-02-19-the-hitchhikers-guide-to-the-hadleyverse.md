@@ -312,4 +312,10 @@ Thank you for reading and thanks Hadley Wickham for the Hadleyverse!
 
 ### Edit (February 23rd)
 
+I have received some feedback from Hadley Wickham about how he would classify his packages: ingest, data manipulation, visualization, data, packages, programming. This is a more accurate way to group them, but I also wanted on this post to show some authomatic classification based on network analysis. (And doing so, I can include some R code for fun!).
+
+I also didn't separate between packages where H.W. is main author from those where he is a contributor. One way to do such classification could be based on the "Author" variable based on the [ctb] (Contributor) or [aut] (Author) tags. Nevertheless not all packages use this notation.
+
+Full comments from Hadley Wickham below, thank you!
+
 <div class="storify"><iframe src="//storify.com/adolfoalvarez/the-hitchiker-s-guide-to-the-hadleyverse/embed" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/adolfoalvarez/the-hitchiker-s-guide-to-the-hadleyverse.js"></script><noscript>[<a href="//storify.com/adolfoalvarez/the-hitchiker-s-guide-to-the-hadleyverse" target="_blank">View the story "The Hitchiker's Guide to the Hadleyverse" on Storify</a>]</noscript></div>

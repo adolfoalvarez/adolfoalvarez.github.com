@@ -310,3 +310,6 @@ Thank you for reading and thanks Hadley Wickham for the Hadleyverse!
 
 42.
 
+### Edit (February 23rd)
+
+<div class="storify"><iframe src="//storify.com/adolfoalvarez/the-hitchiker-s-guide-to-the-hadleyverse/embed" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/adolfoalvarez/the-hitchiker-s-guide-to-the-hadleyverse.js"></script><noscript>[<a href="//storify.com/adolfoalvarez/the-hitchiker-s-guide-to-the-hadleyverse" target="_blank">View the story "The Hitchiker's Guide to the Hadleyverse" on Storify</a>]</noscript></div>

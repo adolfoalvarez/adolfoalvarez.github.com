@@ -7127,11 +7127,6 @@ null,
 
 Notice that the meetup list is not comprehensive so there are some R users groups not included, for example the <a href="https://www.linkedin.com/grp/home?gid=3984607" target="_blank">Argentina R users group</a>, or the community where I am actively participating: the <a href="http://thinking-in-r.blogspot.com/" target="_blank">Poznan R users (PAZUR)</a>. Even if we are not in meetup we exist as you can see in this picture from the last meeting :)
 
-<figure>
-    <img src="{{ site.url }}/images/pazur11_1.jpg" target="_blank" alt='missing' />
-    <figcaption>Yes we do exist, and we are learning R!</figcaption>
-</figure>
-
 <a href = "{{ site.url }}/images/pazur11_1.jpg" target="_blank">![PAZUR 11]({{ site.url }}/images/pazur11_1.jpg) </a>
 *(Yes, we do exist and we are learning R!)*
 

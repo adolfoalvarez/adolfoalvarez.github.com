@@ -13,8 +13,8 @@ share:
 
 <meta name="twitter:site" content="@adolfoalvarez">
 <meta name="twitter:creator" content="@adolfoalvarez">
-<meta name="twitter:url" content="http://adolfoalvarez.cl/the-hitchhikers-guide-to-the-hadleyverse/">
-<meta name="twitter:title" content="The Hitchhiker's Guide to the Hadleyverse">
+<meta name="twitter:url" content="http://adolfoalvarez.cl/connect-share-enjoy-r-communities/">
+<meta name="twitter:title" content="Connect, share, enjoy: R communities">
 <meta name="twitter:description" content="What is the Hadleyverse, and why it is so important for R?">
 <meta name="twitter:image" content="http://adolfoalvarez.cl/images/post6.jpg">
 

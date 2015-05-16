@@ -7,7 +7,7 @@ image:
   feature: post7.jpg
   credit: 
   creditlink: 
-comments: 
+comments: true
 share: 
 ---
 

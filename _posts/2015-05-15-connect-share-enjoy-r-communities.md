@@ -7199,6 +7199,6 @@ Founded in 2008, "The R Project for Statistical Computing" group counts with mor
 
 No matter if you are a <a href="http://www.r-project.org/foundation/members.html" target="_blank">member of the R foundation</a> (By the way, another community), or you are just starting with R, your progress on it will be funnier and better if you do it in community. Do it online, do it face to face, do it locally or globally, but do it since a community is also a great opportunity to meet  people, share, learn and collaborate. See you in one of them!
 
-# Edit May 17, 2015
+### Edit May 17, 2015
 In the online section I mentioned just some of the most popular communities, but there are more: For example, for Google plus <a href="https://plus.google.com/communities/115516770321395255377" target="_blank">"R programming"</a>, or for LinkedIn: <a href="https://www.linkedin.com/groups/R-Programming-2229532/about" target="_blank">"R programming"</a>, <a href="https://www.linkedin.com/grp/home?gid=4066593" target="_blank">"RDataMining"</a>, or <a href="https://www.linkedin.com/grp/home?gid=4215605" target="_blank">"R professionals network"</a>, among others. Oh, and also for twitter there is the <a href="https://twitter.com/hashtag/rlang" target="_blank">#rlang</a> hashtag, but please prefer "#rstats"!. As you see, there is plenty of options you can choose from. Join now! :)
 

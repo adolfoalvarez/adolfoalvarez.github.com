@@ -10,7 +10,7 @@ image:
   creditlink: http://www.adolfoalvarez.cl
 ---
 
-Welcome to my website!. My name is Adolfo Álvarez, and currently you can find me at <a href="http://www.analyx.com" target="_blank">Analyx</a>, where I am part of a great team of analysts and data scientists who will extract valuable information from your data.
+Welcome to my website!. My name is Adolfo Álvarez, and currently you can find me at <a href="http://www.o-i.com" target="_blank">O-I</a>, where I am part of a great team of analysts and data scientists who will extract valuable information from your data.
 
 I got a degree in Industrial Engineering at <a href="http://www.ingenieriaindustrial.usach.cl/" target="_blank"> Universidad de Santiago de Chile</a>, and later I moved to Spain where I completed my PhD in Business Management and Quantitative Methods at <a href="http://www.est.uc3m.es" target="_blank">Universidad Carlos III de Madrid</a> under the supervision of <a href="http://www.est.uc3m.es/dpena" target ="_blank">Daniel Peña</a>. I am interested in the theory and practise of data analysis, under this umbrella you can find many different names pointing to the same concept: business intelligence, statistical (or machine) learning, multivariate statistics, etc... You can find more details about my research interests in the CV section <a href="/cv">here </a>
 

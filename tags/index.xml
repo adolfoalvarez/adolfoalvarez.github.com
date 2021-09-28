@@ -1,54 +1,270 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Adolfo Alvarez</title>
+    <title>Tags on Adolfo Álvarez</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Adolfo Alvarez</description>
+    <description>Recent content in Tags on Adolfo Álvarez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>style</title>
-      <link>/tags/style/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/style/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo-site</title>
       <link>/tags/hugo-site/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/hugo-site/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>bias of estimators</title>
+      <link>/tags/bias-of-estimators/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/plot/</guid>
+      <guid>/tags/bias-of-estimators/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>compound symmetry structure</title>
+      <link>/tags/compound-symmetry-structure/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r-markdown/</guid>
+      <guid>/tags/compound-symmetry-structure/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>convergence of algorithms</title>
+      <link>/tags/convergence-of-algorithms/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/regression/</guid>
+      <guid>/tags/convergence-of-algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kronecker product</title>
+      <link>/tags/kronecker-product/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/kronecker-product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maximum likelihood estimation</title>
+      <link>/tags/maximum-likelihood-estimation/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/maximum-likelihood-estimation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>artificial neural networks</title>
+      <link>/tags/artificial-neural-networks/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/artificial-neural-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MLP network</title>
+      <link>/tags/mlp-network/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mlp-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>precision agriculture</title>
+      <link>/tags/precision-agriculture/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/precision-agriculture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sensitivity analysis</title>
+      <link>/tags/sensitivity-analysis/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sensitivity-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>winter wheat yield</title>
+      <link>/tags/winter-wheat-yield/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/winter-wheat-yield/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yield prediction</title>
+      <link>/tags/yield-prediction/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/yield-prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yield simulation</title>
+      <link>/tags/yield-simulation/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/yield-simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayes factors</title>
+      <link>/tags/bayes-factors/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bayes-factors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cluster analysis</title>
+      <link>/tags/cluster-analysis/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cluster-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SAR</title>
+      <link>/tags/sar/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contingent valuation method</title>
+      <link>/tags/contingent-valuation-method/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/contingent-valuation-method/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demand</title>
+      <link>/tags/demand/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/demand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Municipal solid waste management</title>
+      <link>/tags/municipal-solid-waste-management/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/municipal-solid-waste-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recycling</title>
+      <link>/tags/recycling/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/recycling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Santiago de Chile</title>
+      <link>/tags/santiago-de-chile/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/santiago-de-chile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unimodality</title>
+      <link>/tags/unimodality/</link>
+      <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/unimodality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootstrapping</title>
+      <link>/tags/bootstrapping/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bootstrapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>discussion</title>
+      <link>/tags/discussion/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/discussion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L-statistics</title>
+      <link>/tags/l-statistics/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/l-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Order Statistics</title>
+      <link>/tags/order-statistics/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/order-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dip test.</title>
+      <link>/tags/dip-test./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dip-test./</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SAGRA.</title>
+      <link>/tags/sagra./</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sagra./</guid>
       <description></description>
     </item>
     

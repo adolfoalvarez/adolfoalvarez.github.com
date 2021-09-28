@@ -1,63 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Adolfo Alvarez</title>
+    <title>Categories on Adolfo Álvarez</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Adolfo Alvarez</description>
+    <description>Recent content in Categories on Adolfo Álvarez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Theme Features</title>
-      <link>/categories/theme-features/</link>
-      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      <title>basic</title>
+      <link>/categories/basic/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/theme-features/</guid>
+      <guid>/categories/basic/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>evergreen</title>
-      <link>/categories/evergreen/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      <title>intermediate</title>
+      <link>/categories/intermediate/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/evergreen/</guid>
+      <guid>/categories/intermediate/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>workshop</title>
-      <link>/categories/workshop/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <title>marketing</title>
+      <link>/categories/marketing/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/workshop/</guid>
+      <guid>/categories/marketing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>meetup</title>
-      <link>/categories/meetup/</link>
-      <pubDate>Fri, 01 Jan 2021 14:15:59 -0600</pubDate>
+      <title>training</title>
+      <link>/categories/training/</link>
+      <pubDate>Thu, 16 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/meetup/</guid>
+      <guid>/categories/training/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>package</title>
-      <link>/categories/package/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Research</title>
+      <link>/categories/research/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/package/</guid>
+      <guid>/categories/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workshops</title>
+      <link>/categories/workshops/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/workshops/</guid>
       <description></description>
     </item>
     

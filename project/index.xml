@@ -1,38 +1,91 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A Project Portfolio To Grow on Adolfo Alvarez</title>
+    <title>Publications on Adolfo Álvarez</title>
     <link>/project/</link>
-    <description>Recent content in A Project Portfolio To Grow on Adolfo Alvarez</description>
+    <description>Recent content in Publications on Adolfo Álvarez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tachyons for Style</title>
-      <link>/project/giraffes/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Properties of an MLE algorithm for the multivariate linear model with a separable covariance matrix structure</title>
+      <link>/project/mle/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/project/giraffes/</guid>
-      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort.      Because Speed     Building this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
+      <guid>/project/mle/</guid>
+      <description>In this paper we present properties of an algorithm to determine the maximum likelihood estimators of the covariance matrix when two processes jointly affect the observations.</description>
     </item>
     
     <item>
-      <title>Palmer Penguins</title>
-      <link>/project/penguins/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Multicriteria Prediction and Simulation of Winter Wheat Yield Using Extended Qualitative and Quantitative Data Based on Artificial Neural Networks </title>
+      <link>/project/nn/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/project/penguins/</guid>
-      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.”     — Chris House, A Complete Guide to CSS Grid Layout 1
- Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips.</description>
+      <guid>/project/nn/</guid>
+      <description>The presented models can be used in large-area agriculture, especially in precision agriculture as an important element of decision-making support systems.</description>
     </item>
     
     <item>
-      <title>Bakeoff</title>
-      <link>/project/bakeoff/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Recombining observations in cluster analysis: the SAGRA method</title>
+      <link>/project/thesis/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>/project/bakeoff/</guid>
-      <description>Formspree makes it easy to receive submissions from HTML forms on your static website.      Functional Form     This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used.</description>
+      <guid>/project/thesis/</guid>
+      <description>This thesis wants to answer the question of how we can recombine this small homogeneous groups to reconstruct the structure of the data set</description>
+    </item>
+    
+    <item>
+      <title>Recombining partitions from multivariate data: a clustering method on Bayes factors</title>
+      <link>/project/recombining/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/project/recombining/</guid>
+      <description>We introduce SAGRA (Split And Group Recombining Algorithm), a cluster analysis methodology which split the data set into small homogeneous groups and later recombine those groups using Bayes factors.</description>
+    </item>
+    
+    <item>
+      <title>Towards the estimation of demand for recycling in Chile: The case of Santiago</title>
+      <link>/project/recycling/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/project/recycling/</guid>
+      <description>We estimate the relation between the monthly amount of MSW separated voluntarily from apartments located in Santiago and the monthly price required to participate in a municipal recycling program.</description>
+    </item>
+    
+    <item>
+      <title>Recombining partitions via unimodality tests</title>
+      <link>/project/thesis/</link>
+      <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/project/thesis/</guid>
+      <description>We develop an algorithm that integrates a splitting process inherited from the SAR algorithm (Peña et al., 2004) with unimodality tests such as the dip test proposed by Hartigan and Hartigan (1985), and finally, we use anetwork configuration to visualize the results</description>
+    </item>
+    
+    <item>
+      <title>Exploratory Data Analysis with MATLAB, Second Edition by Wendy L. Martinez, Angel R. Martinez, Jeffrey L. Solka</title>
+      <link>/project/book-review/</link>
+      <pubDate>Mon, 21 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/project/book-review/</guid>
+      <description>Book review</description>
+    </item>
+    
+    <item>
+      <title>Discussion of Testing for the existence of cluster</title>
+      <link>/project/cluster/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cluster/</guid>
+      <description>discussion</description>
+    </item>
+    
+    <item>
+      <title>Recombining dependent data: an Order Statistics approach</title>
+      <link>/project/cluster/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cluster/</guid>
+      <description>This article discusses the problem of forming groups from previously split data.</description>
     </item>
     
   </channel>

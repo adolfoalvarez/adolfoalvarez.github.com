@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.88.1" />
+<title>Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R | Adolfo Álvarez</title>
+
+
+<meta property="twitter:site" content="@adolfoalvarez">
+<meta property="twitter:creator" content="@adolfoalvarez">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="A modern, beautiful, and easily configurable blog theme for Hugo.">
+
+
+<meta property="og:site_name" content="Adolfo Álvarez">
+<meta property="og:title" content="Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R | Adolfo Álvarez">
+<meta property="og:description" content="A modern, beautiful, and easily configurable blog theme for Hugo." />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/featured.jpg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/featured.jpg" >
+    
+    
+  <meta itemprop="name" content="Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R">
+<meta itemprop="description" content="Note: This post is an updated version of another I published in 2014, in a previous version of this site.
+Our story starts as many other R related stories&hellip; in stackoverflow. On January 17th, 2012, an anonymous user &ldquo;user4&rdquo; asked the following question:
+ How can you implement F#&rsquo;s forward pipe operator in R? The operator makes it possible to easily chain a sequence of calculations. For example, when you have an input data and want to call functions foo and bar in sequence, you can write:"><meta itemprop="datePublished" content="2021-09-16T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-09-16T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2101"><meta itemprop="image" content="/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/featured.jpg">
+<meta itemprop="keywords" content="" />
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.4ec89c332375d7492cb7266c63eabc3039816255c2ca9bc3da25b7f272a6f429.css" integrity="sha256-TsicMyN110kstyZsY&#43;q8MDmBYlXCypvD2iW38nKm9Ck=" media="screen">
+  
+  
+  <script src="/panelset.min.078a92db9bd3228df502db3d9e0453c3cf3d910abe3f8deca0ad196c7071ad41.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.3fd1455a12fb9c19afcc2caee9505b2c5c27b686abaae30571e182b5274afb3d.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/home.png" class="dib db-l h2 w-auto" alt="Adolfo Álvarez">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About Blogophonic">About</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Talks">Talks</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="A collection">Research</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/services/" title="A collection">Training</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Plumbers, chains, and famous painters: The (updated) history of the pipe operator in R</h1>
+        
+        <p class="f6 measure lh-copy mv1">By Adolfo Álvarez in <a href="/categories/r">R</a> </p>
+        <p class="f7 db mv0 ttu">September 16, 2021</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <p><em><strong>Note:</strong></em> <em>This post is an updated version of another I published in 2014, in a 
+<a href="https://web.archive.org/web/20150225020645/http://adolfoalvarez.cl/plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/" target="_blank" rel="noopener">previous version of this site</a></em>.</p>
+<p>Our story starts as many other R related stories&hellip; in 
+<a href="http://stackoverflow.com" target="_blank" rel="noopener">stackoverflow</a>. On 
+<a href="http://stackoverflow.com/questions/8896820/how-to-implement-fs-forward-pipe-operator-in-r" target="_blank" rel="noopener">January 17th, 2012</a>, an anonymous user &ldquo;user4&rdquo; asked the following question:</p>
+<blockquote>
+<p>How can you implement F#&rsquo;s forward pipe operator in R? The operator makes it possible to easily chain a sequence of calculations. For example, when you have an input data and want to call functions foo and bar in sequence, you can write:</p>
+</blockquote>
+<blockquote>
+<p>data |&gt; foo |&gt; bar</p>
+</blockquote>
+<p>
+<a href="https://twitter.com/bolkerb" target="_blank" rel="noopener">Ben Bolker</a> answered 
+<a href="http://stackoverflow.com/a/8897778" target="_blank" rel="noopener">same day</a>  and gives what can be considered the first pipe in R:</p>
+<style>
+div.code { background-color:#ffffff; border-radius: 20px; padding: 5px;}
+</style>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#d14">&#34;%&gt;%&#34;</span> <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">function</span>(x,f) <span style="color:#900;font-weight:bold">do.call</span>(f,<span style="color:#900;font-weight:bold">list</span>(x))
+  <span style="color:#000;font-weight:bold">pi</span> <span style="color:#000;font-weight:bold">%&gt;%</span> sin <span style="color:#000;font-weight:bold">%&gt;%</span> cos
+</code></pre></div><pre tabindex="0"><code>## [1] 1
+</code></pre></div>
+<p>Although probably the first formal introduction of a pipe function in an R package occured on 
+<a href="https://github.com/crowding/vadr/commit/9509884b1e88e1310d964acab7c6d9838df9a639#diff-d725d41bc2e847af038b2b15e28d8520831f4f69fcc0f87a6afe97bbb5df9c68" target="_blank" rel="noopener">April 5, 2012</a>, when <a href = "https://twitter.com/perceptophore" target="_blank">Peter Meilstrup</a> started the package <code>ptools</code> as a way to collect &ldquo;various data manipulation and programming utilities&rdquo;. One of those utilities was the function <code>chain</code>, implementing a way to pipe the arguments. The package was later renamed to 
+<a href="https://github.com/crowding/vadr" target="_blank" rel="noopener"><code>vadr</code></a> where the <code>chain</code> function can still be found.</p>
+
+
+
+
+<h2 id="dplyr">dplyr.
+  <a href="#dplyr"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>But soon one of the packages that contributed to increase the popularity of the pipe use will be created: On 
+<a href="https://github.com/tidyverse/dplyr/commit/80dc69b144711ec095db1d62cf0b73e09560eaf0" target="_blank" rel="noopener">October 28th, 2012</a>, 
+<a href="https://twitter.com/hadleywickham" target="_blank" rel="noopener">Hadley Wickham</a> started the <code>dplyr</code> project on 
+<a href="https://github.com/tidyverse/dplyr/" target="_blank" rel="noopener">github</a> as an evolution of his data analysis package <a href = "https://github.com/hadley/plyr" target="_blank"><code>plyr</code></a> (Initially the package was indeed called &lsquo;plyr2&rsquo;). Originally, the dplyr package didn&rsquo;t incorporate a chain function, but this changed almost a year later, in <a href = "https://github.com/tidyverse/dplyr/commit/57f76ed560ac52590f7ded3d013db8fb19f7d627
+" target="_blank">October 9, 2013</a>, when the first pipe in dplyr appeared. The function was also denominated <code>chain</code>, but the package introduced its first operator for the pipe: <code>%.%</code>. The idea behind the introduction of the chain was simplify notation for applying several functions to a data frame. Without the chain function, in dplyr you needed to read the verbs from inside out:</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">library</span>(hflights)
+<span style="color:#900;font-weight:bold">library</span>(dplyr)
+<span style="color:#900;font-weight:bold">filter</span>(
+   <span style="color:#900;font-weight:bold">summarise</span>(
+     <span style="color:#900;font-weight:bold">select</span>(
+       <span style="color:#900;font-weight:bold">group_by</span>(hflights, Year, Month, DayofMonth), 
+       Year<span style="color:#000;font-weight:bold">:</span>DayofMonth, ArrDelay, DepDelay
+     ), 
+     arr <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(ArrDelay, na.rm <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>),  
+     dep <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(DepDelay, na.rm <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
+   ), 
+   arr <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span> <span style="color:#000;font-weight:bold">|</span> dep <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span>
+ )
+</code></pre></div><pre tabindex="0"><code>## # A tibble: 14 × 5
+## # Groups:   Year, Month [10]
+##     Year Month DayofMonth   arr   dep
+##    &lt;int&gt; &lt;int&gt;      &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1  2011     2          4  44.1  47.2
+##  2  2011     3          3  35.1  38.2
+##  3  2011     3         14  46.6  36.1
+##  4  2011     4          4  38.7  27.9
+##  5  2011     4         25  37.8  22.3
+##  6  2011     5         12  69.5  64.5
+##  7  2011     5         20  37.0  26.6
+##  8  2011     6         22  65.5  62.3
+##  9  2011     7         29  29.6  31.9
+## 10  2011     9         29  39.2  32.5
+## 11  2011    10          9  61.9  59.5
+## 12  2011    11         15  43.7  39.2
+## 13  2011    12         29  26.3  30.8
+## 14  2011    12         31  46.5  54.2
+</code></pre></div>
+<p>But when the chain function was introduced this was changed first to:</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">chain</span>(
+   hflights,
+   <span style="color:#900;font-weight:bold">group_by</span>(Year, Month, DayofMonth),
+   <span style="color:#900;font-weight:bold">select</span>(Year<span style="color:#000;font-weight:bold">:</span>DayofMonth, ArrDelay, DepDelay),
+   <span style="color:#900;font-weight:bold">summarise</span>(
+     arr <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(ArrDelay, na.rm <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>), 
+     dep <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(DepDelay, na.rm <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
+   ),
+   <span style="color:#900;font-weight:bold">filter</span>(arr <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span> <span style="color:#000;font-weight:bold">|</span> dep <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span>)
+ )
+</code></pre></div></div>
+<p>And with the %.% pipe like this:</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"> hflights <span style="color:#000;font-weight:bold">%.%</span>
+   <span style="color:#900;font-weight:bold">group_by</span>(Year, Month, DayofMonth) <span style="color:#000;font-weight:bold">%.%</span>
+   <span style="color:#900;font-weight:bold">select</span>(Year<span style="color:#000;font-weight:bold">:</span>DayofMonth, ArrDelay, DepDelay) <span style="color:#000;font-weight:bold">%.%</span>
+   <span style="color:#900;font-weight:bold">summarise</span>(
+     arr <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(ArrDelay, na.rm <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>), 
+     dep <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(DepDelay, na.rm <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
+   ) <span style="color:#000;font-weight:bold">%.%</span>
+   <span style="color:#900;font-weight:bold">filter</span>(arr <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span> <span style="color:#000;font-weight:bold">|</span> dep <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span>)
+</code></pre></div></div>
+
+
+
+
+<h2 id="magrittr">magrittr
+  <a href="#magrittr"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Nevertheless, the <code>%.%</code> pipe would not stay in <code>dplyr</code> package for long time, on <a href = "http://stackoverflow.com/revisions/20828881/1" target="_blank">December 29th, 2013</a>, <a href = "http://www.stefanbache.dk/" target="_blank"> Stefan Bache </a> revisited the old stackoverflow question proposing an alternative to the original answer:</p>
+<blockquote>
+<p>How about</p>
+</blockquote>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">`%&gt;%` <span style="color:#000;font-weight:bold">&lt;-</span>
+   <span style="color:#900;font-weight:bold">function</span>(e1, e2)
+   {
+     cl <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">match.call</span>()
+     e  <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">do.call</span>(substitute, <span style="color:#900;font-weight:bold">list</span>(cl[[3]], <span style="color:#900;font-weight:bold">list</span>(. <span style="color:#000;font-weight:bold">=</span> cl[[2]])))
+     <span style="color:#900;font-weight:bold">eval</span>(e)
+   }
+</code></pre></div></div class>
+<blockquote>
+<p>which allows a chain like:</p>
+</blockquote>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">iris <span style="color:#000;font-weight:bold">%&gt;%</span> 
+  <span style="color:#900;font-weight:bold">subset</span>(., Species <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;setosa&#34;</span>, select <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">-</span>Species) <span style="color:#000;font-weight:bold">%&gt;%</span> 
+  <span style="color:#900;font-weight:bold">colMeans</span>(.)
+</code></pre></div><pre tabindex="0"><code>## Sepal.Length  Sepal.Width Petal.Length  Petal.Width 
+##        5.006        3.428        1.462        0.246
+</code></pre></div>
+<p>Stefan continued working on this pipe operation, and on 
+<a href="http://stackoverflow.com/revisions/20828881/4" target="_blank" rel="noopener">December 30th, 2013</a>, he implemented in github the <code>plumbr</code> package which included the <code>%&gt;%</code> operator. 
+<a href="http://stackoverflow.com/revisions/20828881/5" target="_blank" rel="noopener">Two days later</a>, <code>plumbr</code> would be renamed as <a href = "https://github.com/smbache/magrittr" target="_blank"><code>magrittr</code></a>, its current name, in a clear reference of the famous painting <a href = "http://en.wikipedia.org/wiki/The_Treachery_of_Images" target="_blank">&ldquo;The Treachery of Images&rdquo;</a> of the Belgian painter René Magritte.</p>
+<p><img src="MagrittePipe.jpg" title="The Treachery of Images" alt="The Treachery of Images" style="display: block; margin: auto;" /></p>
+<p>The <code>dplyr</code> package was being developed in parallel but these two developments were intended to converge. In the first comment of the <a href = "http://blog.rstudio.org/2014/01/17/introducing-dplyr/" target="_blank">announcing post</a> of <code>dplyr</code> by the RStudio blog in January 2014, Stefan Bache let Hadley Wickham know about the <code>magrittr</code> operator. After that, on <a href = "https://github.com/tidyverse/dplyr/commit/3c91ba370286025c31f624317ebce421d1c70caa" target="_blank">March 19th, 2014 </a>, the <code>chain</code> function was  deprecated on dplyr, and finally on <a href = "https://github.com/tidyverse/dplyr/commit/89aaa9a8b386d7e3705ffb682d89dc5bebe823c0" target="_blank">April 14th, 2014</a>, <code>dplyr</code> incorporated the <code>%&gt;%</code> operator of magrittr, recommending it in substitution of the original <code>%.%</code>, because the former is more easy to type holding down the Shift key. On <a href = "https://github.com/tidyverse/dplyr/commit/67183e2771f24f59330fdaae1bb58b627a58a8ff" target="_blank">August 1st, 2014</a>, <code>%.%</code>  was deprecated.</p>
+<p>At the same time, on 
+<a href="https://github.com/rstudio/rstudio/commit/861d4e36ffd0233ee41bfb80c712a635c70c1b3c" target="_blank" rel="noopener">July 31th, 2014</a> , the Rstudio IDE version v0.98.987 incorporated a shortcut for the <code>dplyr</code>/<code>magrittr</code> pipe operator <code>%&gt;%</code> to make even more easy its use (Shift+Alt+.), but this was 
+<a href="https://github.com/rstudio/rstudio/commit/0fb46fbc114a91217fae106bac42e82f60a02477" target="_blank" rel="noopener">soon changed</a> to Ctrl+Shift+M, its current form.</p>
+<p>At this point of the story I recommend you to visit a blog post from August 5th, 2014, where Stefan told about 
+<a href="https://www.r-statistics.com/2014/08/simpler-r-coding-with-pipes-the-present-and-future-of-the-magrittr-package/" target="_blank" rel="noopener">how he started magrittr</a>.</p>
+
+
+
+
+<h2 id="piper">pipeR
+  <a href="#piper"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Another iteration of the pipe implementation in R started on April 7th, 2014, when <a href = "https://twitter.com/renkun_ken" target="_blank">Kun Ren </a>  published on github <a href = "https://github.com/renkun-ken/pipeR/" target="_blank"> the <code>pipeR</code> package </a>, incorporating a different pipe operator <code>%&gt;&gt;%</code>to add more flexibility to the piping process.</p>
+<p>The package incorporates several features for the pipe, such as first argument of a function, as argument in an expression (Using <code>.</code>), by using a formula, or to save intermediate results (using <code>~</code>), or to extract element by names (using <code>()</code>):</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">library</span>(pipeR)
+mtcars <span style="color:#000;font-weight:bold">%&gt;&gt;%</span>
+  (<span style="color:#900;font-weight:bold">lm</span>(mpg <span style="color:#000;font-weight:bold">~</span> wt <span style="color:#000;font-weight:bold">+</span> cyl, data <span style="color:#000;font-weight:bold">=</span> .)) <span style="color:#000;font-weight:bold">%&gt;&gt;%</span>
+  (<span style="color:#000;font-weight:bold">~</span> lm_mtcars) <span style="color:#000;font-weight:bold">%&gt;&gt;%</span>
+  summary <span style="color:#000;font-weight:bold">%&gt;&gt;%</span>
+  (r.squared)
+</code></pre></div><pre tabindex="0"><code>## [1] 0.8302274
+</code></pre></div>
+<p>Currently pipeR has not been updated since 2016, but is still available on CRAN and github, in case you want to give it a try.</p>
+
+
+
+
+<h2 id="wrapr">wrapr
+  <a href="#wrapr"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>On 
+<a href="https://github.com/WinVector/wrapr/commit/6bb774f090c6aec457c472703c4759e98cc25e38" target="_blank" rel="noopener">July 2018</a>, the 
+<a href="https://winvector.github.io/wrapr/" target="_blank" rel="noopener">package <code>wrappr</code></a> introduced the 
+<a href="https://winvector.github.io/wrapr/reference/dot_arrow.html" target="_blank" rel="noopener">&ldquo;dot arrow pipe&rdquo;</a> <code>%.&gt;%</code> where the notation <code>a %.&gt;% b</code> is nearly equivalent to <code>. &lt;- a; b</code>.</p>
+<p>For example</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">library</span>(wrapr)
+<span style="color:#099">1</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span> <span style="color:#000;font-weight:bold">%.&gt;%</span> <span style="color:#900;font-weight:bold">mean</span>(.)
+</code></pre></div><pre tabindex="0"><code>## [1] 5.5
+</code></pre></div>
+<p>And the lhs is still stored in the environment:</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">.
+</code></pre></div><pre tabindex="0"><code>##  [1]  1  2  3  4  5  6  7  8  9 10
+</code></pre></div>
+<p>
+<a href="https://journal.r-project.org/archive/2018/RJ-2018-042/RJ-2018-042.pdf" target="_blank" rel="noopener">More details here</a></p>
+
+
+
+
+<h2 id="base-r">Base R
+  <a href="#base-r"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Pipes in R changed completely the way how we code in R, making it more simple and readable. Therefore was a matter of time they were incorporated to the base R code. One of the first attempts was developed by 
+<a href="https://twitter.com/_lionelhenry" target="_blank" rel="noopener">Lionel Henry</a>, who started testing a native pipe in base R on 
+<a href="https://github.com/lionel-/r-source/tree/pipe" target="_blank" rel="noopener">February, 2016</a>.  He wrote 
+<a href="https://lionel-.github.io/2016/02/15/ideas-for-an-updated-r-syntax/" target="_blank" rel="noopener">a very recommended post</a> about this and other proposals for the R core, imagining R 4.0 with a native pipe operator. One of the reasons for such implementation was that &ldquo;native handling of the pipe would improve error recovery&rdquo; because of the dependence of an external package (<code>magrittr</code>).</p>
+<p>At this point we are probably missing part of the story. It seems that during the next 3 years there was no progress on this topic, although probably internal discussions happened at the R Core team. On October 5th, 2019, Antoine F. asked to the r-devel list: 
+<a href="https://stat.ethz.ch/pipermail/r-devel/2019-October/078520.html" target="_blank" rel="noopener">should base R have a piping operator ?</a>. That question indeed provoked 
+<a href="https://stat.ethz.ch/pipermail/r-devel/2019-October/thread.html#78520" target="_blank" rel="noopener">several replies</a> from R developers, including Lionel Henry, Duncan Murdoch, or Luke Tierney among others.</p>
+<p>It was actually 
+<a href="https://stat.uiowa.edu/people/luke-tierney" target="_blank" rel="noopener">Luke Tierney</a>, who in July 8, 2020,  in his and Martin Mächler&rsquo;s keynote at 
+<a href="https://user2020.r-project.org" target="_blank" rel="noopener">UseR! 2020</a> spoke about new developments in R. A 
+<a href="https://www.youtube.com/watch?v=X_eDHNVceCU&amp;t=4082s" target="_blank" rel="noopener">section of the keynote</a> was dedicated to the pipe, where he advanced that thanks to the ideas of Lionel Henry and Jim Hester, a base pipe <code>|&gt;</code> was under development.</p>
+<p>Finally, at the end of 2020, <code>|&gt;</code> was born. The native pipe was 
+<a href="https://developer.r-project.org/blosxom.cgi/R-devel/NEWS/2020/12/04" target="_blank" rel="noopener">officially announced in the devel version of R</a>, with immediate reactions in the 
+<a href="https://stat.ethz.ch/pipermail/r-devel/2020-December/thread.html#80173" target="_blank" rel="noopener">r-devel mailing list</a> and in the rest of the R community (examples 
+<a href="https://win-vector.com/2020/12/07/my-opinion-on-rs-upcoming-pipe/" target="_blank" rel="noopener">here</a>, 
+<a href="https://news.ycombinator.com/item?id=25316608" target="_blank" rel="noopener">here</a>, 
+<a href="https://www.jumpingrivers.com/blog/new-features-r410-pipe-anonymous-functions/" target="_blank" rel="noopener">here</a>, and 
+<a href="https://www.infoworld.com/article/3621369/use-the-new-r-pipe-built-into-r-41.html" target="_blank" rel="noopener">here</a> ). The pipe finally landed in the R stable version 4.1.0, which was released and officially announced on 
+<a href="https://stat.ethz.ch/pipermail/r-announce/2021/000670.html" target="_blank" rel="noopener">May 18, 2021</a></p>
+<p>Now, our first example taken from the dplyr documentation can we written as:</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">hflights <span style="color:#000;font-weight:bold">|&gt;</span>
+   <span style="color:#900;font-weight:bold">group_by</span>(Year, Month, DayofMonth) <span style="color:#000;font-weight:bold">|&gt;</span>
+   <span style="color:#900;font-weight:bold">select</span>(Year<span style="color:#000;font-weight:bold">:</span>DayofMonth, ArrDelay, DepDelay) <span style="color:#000;font-weight:bold">|&gt;</span>
+   <span style="color:#900;font-weight:bold">summarise</span>(
+     arr <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(ArrDelay, na.rm <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>), 
+     dep <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">mean</span>(DepDelay, na.rm <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
+   ) <span style="color:#000;font-weight:bold">|&gt;</span>
+   <span style="color:#900;font-weight:bold">filter</span>(arr <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span> <span style="color:#000;font-weight:bold">|</span> dep <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">30</span>)
+</code></pre></div><pre tabindex="0"><code>## # A tibble: 14 × 5
+## # Groups:   Year, Month [10]
+##     Year Month DayofMonth   arr   dep
+##    &lt;int&gt; &lt;int&gt;      &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1  2011     2          4  44.1  47.2
+##  2  2011     3          3  35.1  38.2
+##  3  2011     3         14  46.6  36.1
+##  4  2011     4          4  38.7  27.9
+##  5  2011     4         25  37.8  22.3
+##  6  2011     5         12  69.5  64.5
+##  7  2011     5         20  37.0  26.6
+##  8  2011     6         22  65.5  62.3
+##  9  2011     7         29  29.6  31.9
+## 10  2011     9         29  39.2  32.5
+## 11  2011    10          9  61.9  59.5
+## 12  2011    11         15  43.7  39.2
+## 13  2011    12         29  26.3  30.8
+## 14  2011    12         31  46.5  54.2
+</code></pre></div>
+<p>In parallel, the <code>magrittr</code> package was still evolving but converging to the native pipe. After a transition to the tidyverse family of packages in 2016, on November 2020, the 
+<a href="https://www.tidyverse.org/blog/2020/11/magrittr-2-0-is-here/" target="_blank" rel="noopener">2.0 version was released</a>. As noticed in the announcement post, this version of <code>magrittr</code> incorporated a new version of the %&gt;% pipe written in C, allowing a significant increase in speed. A deeper benchmark analysis with similar results can also be found 
+<a href="https://michaelbarrowman.co.uk/post/the-new-base-pipe/" target="_blank" rel="noopener">here</a>.</p>
+<p>As remarked by 
+<a href="https://www.jumpingrivers.com/blog/new-features-r410-pipe-anonymous-functions/" target="_blank" rel="noopener">this blog post of Jumping Rivers on the announcement of R 4.1</a> there are some differences between <code>magrittr</code> pipe and the native one. For example, with <code>magrittr</code> you don&rsquo;t need to write the parenthesis at the end of the function names, while this is compulsory in the native pipe</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">library</span>(magrittr)
+<span style="color:#099">1</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span> <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">mean</span>()
+</code></pre></div><pre tabindex="0"><code>## [1] 5.5
+</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#099">1</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span> <span style="color:#000;font-weight:bold">|&gt;</span> <span style="color:#900;font-weight:bold">mean</span>()
+</code></pre></div><pre tabindex="0"><code>## [1] 5.5
+</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#099">1</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span> <span style="color:#000;font-weight:bold">%&gt;%</span> mean
+</code></pre></div><pre tabindex="0"><code>## [1] 5.5
+</code></pre><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#099">1</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span> <span style="color:#000;font-weight:bold">|&gt;</span> mean
+</code></pre></div><pre tabindex="0"><code>## Error: The pipe operator requires a function call as RHS
+</code></pre></div>
+<p>Another probably more important difference is the dot (.) replacement. By default, the pipes are passing the lhs (left-hand side) as a first argument to the rhs (right-hand side), as in the example above, where 1:10 is used as the first argument for mean(). Using <code>magrittr</code> pipe, the lhs can be used as any other argument of the rhs using a dot (.) where the lhs should be placed.</p>
+<p>For example, while this is working with magrittr<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>:</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#900;font-weight:bold">library</span>(palmerpenguins)
+<span style="color:#900;font-weight:bold">library</span>(rpart)
+<span style="color:#900;font-weight:bold">library</span>(rpart.plot)
+penguins <span style="color:#000;font-weight:bold">%&gt;%</span> 
+  <span style="color:#900;font-weight:bold">rpart</span>(species <span style="color:#000;font-weight:bold">~</span> ., method <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;class&#34;</span>, data <span style="color:#000;font-weight:bold">=</span> .) <span style="color:#000;font-weight:bold">%&gt;%</span> 
+  <span style="color:#900;font-weight:bold">prp</span>(extra <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>)
+</code></pre></div><p><img src="/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/index_files/figure-html/unnamed-chunk-18-1.png" width="70%" /></p>
+</div>
+<p>This is not:</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">penguins <span style="color:#000;font-weight:bold">|&gt;</span> 
+  <span style="color:#900;font-weight:bold">rpart</span>(species <span style="color:#000;font-weight:bold">~</span> ., method <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;class&#34;</span>, data <span style="color:#000;font-weight:bold">=</span> .) <span style="color:#000;font-weight:bold">|&gt;</span> 
+  <span style="color:#900;font-weight:bold">prp</span>(extra <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>)
+</code></pre></div><pre tabindex="0"><code>## Error in model.frame.default(formula = penguins, data = ., weights = species ~ : 'data' must be a data.frame, environment, or list
+</code></pre></div>
+<p>To make it work we need to use anothe new feature of R 4.1.0, the shorthand inline function notation <code>\(x)</code>:</p>
+<div class = "code">
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">penguins <span style="color:#000;font-weight:bold">|&gt;</span>
+  {<span style="color:#900;font-weight:bold">\</span>(x) <span style="color:#900;font-weight:bold">rpart</span>(species <span style="color:#000;font-weight:bold">~</span> ., method <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;class&#34;</span>, data <span style="color:#000;font-weight:bold">=</span> x)}() <span style="color:#000;font-weight:bold">|&gt;</span>
+  <span style="color:#900;font-weight:bold">prp</span>(extra <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>)
+</code></pre></div><p><img src="/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/index_files/figure-html/unnamed-chunk-20-1.png" width="70%" /></p>
+</div>
+<p>While there were some ideas to introduce 
+<a href="https://stat.ethz.ch/pipermail/r-devel/2021-January/080396.html" target="_blank" rel="noopener">a new pipe in R base</a> <code>=&gt;</code> to pass the lhs to other arguments (see also 
+<a href="https://twitter.com/rdataberlin/status/1396144404033949700" target="_blank" rel="noopener">this</a>), it is still 
+<a href="https://stat.ethz.ch/pipermail/r-devel/2021-April/080645.html" target="_blank" rel="noopener">not officially supported</a>. 
+<a href="https://www.youtube.com/watch?v=X_eDHNVceCU&amp;t=3099s" target="_blank" rel="noopener">Previous options</a> included also using <code>_</code> as a replacement for the <code>.</code> placeholder. We need to wait to see if that second pipe notation will be adopted, or they will choose to stay with the <code>|&gt;</code> pipe and the <code>\(x)</code> solution.</p>
+<p>9 years later, and as a result of the efforts and time from many R users and developers, our <code>user4</code> has finally her <code>data |&gt; foo |&gt; bar</code> fully implemented in R, changing for many of us the way we are coding. I am willing to know what versions 5, 6, or 7 will bring us, thank you for reading!</p>
+
+
+
+
+<h2 id="additional-comments">Additional comments
+  <a href="#additional-comments"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<ul>
+<li>
+<p>The <code>magrittr</code> package implements 
+<a href="https://data-and-the-world.onrender.com/posts/magrittr-pipes/" target="_blank" rel="noopener">other three pipes</a> (<code>%T&gt;%</code>, <code>%$%</code> , and <code>%&lt;&gt;%</code>)</p>
+</li>
+<li>
+<p>The <code>data.table</code> package does not include a general use pipe, but 
+<a href="https://www.gl-li.com/2017/07/25/compare-data.table-pipes-and-magrittr-pipes/" target="_blank" rel="noopener">you can pipe</a> functions with <code>][</code></p>
+</li>
+<li>
+<p>Maybe another difference between the <code>magrittr</code> pipe and the base R one is pronunciation: While 
+<a href="https://twitter.com/hadleywickham/status/507643720401842176" target="_blank" rel="noopener">Hadley Wickham stated</a> that the <code>%&gt;%</code> pipe should be pronounced as &ldquo;then&rdquo;, we can clearly hear Luke Tierney on his 
+<a href="https://www.youtube.com/watch?v=X_eDHNVceCU&amp;t=4082s" target="_blank" rel="noopener">User! keynote</a> read <code>|&gt;</code> as &ldquo;goes into&rdquo;.</p>
+</li>
+<li>
+<p>The pipe <code>|&gt;</code> is also implemented in other languages such as 
+<a href="https://elixirschool.com/en/lessons/basics/pipe-operator/" target="_blank" rel="noopener">Elixir</a>, 
+<a href="https://syl1.gitbook.io/julia-language-a-concise-tutorial/useful-packages/pipe" target="_blank" rel="noopener">Julia</a>, 
+<a href="https://stackoverflow.com/questions/55143363/what-does-the-operator-do-in-javascript" target="_blank" rel="noopener">Javascript</a> and 
+<a href="https://theburningmonk.com/2011/09/fsharp-pipe-forward-and-pipe-backward/" target="_blank" rel="noopener">F#</a>.</p>
+</li>
+<li>
+<p>The pipe <code>|&gt;</code> was originally proposed by Tobias Nipkow 
+<a href="https://web.archive.org/web/20190217164203/https://blogs.msdn.microsoft.com/dsyme/2011/05/17/archeological-semiotics-the-birth-of-the-pipeline-symbol-1994/" target="_blank" rel="noopener">in May 1994</a> for the proof assistant 
+<a href="https://isabelle.in.tum.de/" target="_blank" rel="noopener">Isabelle/ML</a>.</p>
+</li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Notice that <code>penguins</code> is placed in the data argument, while a dot in the first argument, <code>species ~ .</code>, is ignored since a dot in a formula means something different.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">September 16, 2021</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">10 minute read, 2101 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="/categories/r">R</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+  
+  
+</div>
+
+      </footer>
+    </article>
+    
+      
+<div class="post-comments pa0 pa4-l mt4">
+  
+  <script src="https://utteranc.es/client.js"
+          repo="adolfoalvarez/adolfoalvarez.github.com"
+          issue-term="pathname"
+          theme="boxy-light"
+          label="comments :crystal_ball:"
+          crossorigin="anonymous"
+          async
+          type="text/javascript">
+  </script>
+  
+</div>
+
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2021
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.linkedin.com/in/adolfoalvarez/" title="linkedin" target="_blank" rel="noopener">
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/adolfoalvarez" title="twitter" target="_blank" rel="noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.instagram.com/adolfoalvarezp/" title="instagram" target="_blank" rel="noopener">
+      <i class="fab fa-instagram fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/adolfoalvarez" title="github" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="http://orcid.org/0000-0001-8187-3003" title="orcid" target="_blank" rel="noopener">
+      <i class="ai ai-orcid fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+      <a class="dib pv1 ph2 link" href="/contact/" title="Contact form">Contact</a>
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>

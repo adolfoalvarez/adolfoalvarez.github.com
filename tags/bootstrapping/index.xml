@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bootstrapping on Adolfo Álvarez</title>
+    <link>/tags/bootstrapping/</link>
+    <description>Recent content in Bootstrapping on Adolfo Álvarez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Dec 2009 00:00:00 +0000</lastBuildDate><atom:link href="/tags/bootstrapping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recombining dependent data: an Order Statistics approach</title>
+      <link>/project/cluster/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cluster/</guid>
+      <description>This article discusses the problem of forming groups from previously split data.</description>
+    </item>
+    
+  </channel>
+</rss>

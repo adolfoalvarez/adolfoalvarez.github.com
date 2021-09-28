@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>winter wheat yield on Adolfo Álvarez</title>
+    <link>/tags/winter-wheat-yield/</link>
+    <description>Recent content in winter wheat yield on Adolfo Álvarez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jul 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/winter-wheat-yield/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multicriteria Prediction and Simulation of Winter Wheat Yield Using Extended Qualitative and Quantitative Data Based on Artificial Neural Networks </title>
+      <link>/project/nn/</link>
+      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/project/nn/</guid>
+      <description>The presented models can be used in large-area agriculture, especially in precision agriculture as an important element of decision-making support systems.</description>
+    </item>
+    
+  </channel>
+</rss>

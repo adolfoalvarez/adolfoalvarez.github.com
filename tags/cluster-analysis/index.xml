@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cluster analysis on Adolfo Álvarez</title>
+    <link>/tags/cluster-analysis/</link>
+    <description>Recent content in Cluster analysis on Adolfo Álvarez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 27 Jun 2014 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cluster-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recombining observations in cluster analysis: the SAGRA method</title>
+      <link>/project/thesis/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/project/thesis/</guid>
+      <description>This thesis wants to answer the question of how we can recombine this small homogeneous groups to reconstruct the structure of the data set</description>
+    </item>
+    
+    <item>
+      <title>Recombining partitions from multivariate data: a clustering method on Bayes factors</title>
+      <link>/project/recombining/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/project/recombining/</guid>
+      <description>We introduce SAGRA (Split And Group Recombining Algorithm), a cluster analysis methodology which split the data set into small homogeneous groups and later recombine those groups using Bayes factors.</description>
+    </item>
+    
+    <item>
+      <title>Recombining partitions via unimodality tests</title>
+      <link>/project/thesis/</link>
+      <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/project/thesis/</guid>
+      <description>We develop an algorithm that integrates a splitting process inherited from the SAR algorithm (Peña et al., 2004) with unimodality tests such as the dip test proposed by Hartigan and Hartigan (1985), and finally, we use anetwork configuration to visualize the results</description>
+    </item>
+    
+    <item>
+      <title>Recombining dependent data: an Order Statistics approach</title>
+      <link>/project/cluster/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cluster/</guid>
+      <description>This article discusses the problem of forming groups from previously split data.</description>
+    </item>
+    
+  </channel>
+</rss>

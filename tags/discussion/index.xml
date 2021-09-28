@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>discussion on Adolfo Álvarez</title>
+    <link>/tags/discussion/</link>
+    <description>Recent content in discussion on Adolfo Álvarez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Dec 2009 00:00:00 +0000</lastBuildDate><atom:link href="/tags/discussion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discussion of Testing for the existence of cluster</title>
+      <link>/project/cluster/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cluster/</guid>
+      <description>discussion</description>
+    </item>
+    
+  </channel>
+</rss>

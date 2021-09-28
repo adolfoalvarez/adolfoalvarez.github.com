@@ -1,36 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Talks that Last on Adolfo Alvarez</title>
+    <title>Selected Talks on Adolfo Álvarez</title>
     <link>/talk/</link>
-    <description>Recent content in Talks that Last on Adolfo Alvarez</description>
+    <description>Recent content in Selected Talks on Adolfo Álvarez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A campfire</title>
-      <link>/talk/campfire/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Tips, tricks, and some packages for eficient R programming</title>
+      <link>/talk/r_eficiente/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/talk/campfire/</guid>
-      <description>I&amp;rsquo;m really excited to give this talk! Stay tuned for video and slides.</description>
-    </item>
-    
-    <item>
-      <title>A seedling</title>
-      <link>/talk/second-seedling/</link>
-      <pubDate>Fri, 01 Jan 2021 14:15:59 -0600</pubDate>
-      
-      <guid>/talk/second-seedling/</guid>
+      <guid>/talk/r_eficiente/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>A seedling</title>
-      <link>/talk/seedling/</link>
-      <pubDate>Mon, 13 Jan 2020 14:15:59 -0600</pubDate>
+      <title>Efficient R programming: tips, tricks, and some interesting packages</title>
+      <link>/talk/pazur32/</link>
+      <pubDate>Thu, 23 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/talk/seedling/</guid>
+      <guid>/talk/pazur32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MLE of separable covariance matrix structure-simulation study</title>
+      <link>/talk/mle/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/mle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beyond data analysis: the other uses of R in academia</title>
+      <link>/talk/2021-09-25-bda/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2021-09-25-bda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Five lessons I have learned at Analyx</title>
+      <link>/talk/2021-09-25-serxii/</link>
+      <pubDate>Thu, 22 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2021-09-25-serxii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R: fast and big strategies</title>
+      <link>/talk/user15/</link>
+      <pubDate>Tue, 30 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/user15/</guid>
       <description></description>
     </item>
     

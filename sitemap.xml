@@ -2,149 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/collection/day02/01-netlify/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/spoonful-series/01-spoonful/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/day01/01-github/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/prework/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/day01/</loc>
-    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/day01/02-postcards/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/spoonful-series/02-spoonful/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/day02/02-blogdown/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/day02/</loc>
-    <lastmod>2021-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/spoonful-series/03-spoonful/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/day01/03-distill/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/day02/03-blogdown/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+    <loc>/categories/basic/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+    <loc>/services/data-preparation/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/social/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/theme-features/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/style/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/color-themes/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/fonts/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/collection/</loc>
-    <lastmod>2021-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/evergreen/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/evergreen/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/talk/campfire/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/talk/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/workshop/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/series/a-spoonful-of-hugo/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/spoonful-series/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <loc>/services/efficient-r/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/hugo-site/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/intermediate/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/services/introduction-r/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/marketing/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/services/marketing-analytics/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2021-09-16-plumbers-chains-and-famous-painters-the-history-of-the-pipe-operator-in-r/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/r/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/series/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    <loc>/tags/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/seedling/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
+    <loc>/services/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/talk/second-seedling/</loc>
-    <lastmod>2021-01-01T14:15:59-06:00</lastmod>
+    <loc>/categories/training/</loc>
+    <lastmod>2021-09-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/meetup/</loc>
-    <lastmod>2021-01-01T14:15:59-06:00</lastmod>
+    <loc>/tags/bias-of-estimators/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/rmarkdown/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <loc>/tags/compound-symmetry-structure/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-12-01-r-rmarkdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <loc>/tags/convergence-of-algorithms/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <loc>/tags/kronecker-product/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <loc>/tags/maximum-likelihood-estimation/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/regression/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/talk/seedling/</loc>
-    <lastmod>2020-01-13T14:15:59-06:00</lastmod>
+    <loc>/project/mle/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/project/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/package/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <loc>/categories/research/</loc>
+    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/giraffes/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <loc>/talk/</loc>
+    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/css-grid-scaffold/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+    <loc>/talk/r_eficiente/</loc>
+    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/penguins/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+    <loc>/categories/workshops/</loc>
+    <lastmod>2019-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/project/bakeoff/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    <loc>/tags/artificial-neural-networks/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/built-in-contact-form/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/mlp-network/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/nn/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/precision-agriculture/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/sensitivity-analysis/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/winter-wheat-yield/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/yield-prediction/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/yield-simulation/</loc>
+    <lastmod>2019-07-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/pazur32/</loc>
+    <lastmod>2019-05-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/mle/</loc>
+    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/2021-09-25-bda/</loc>
+    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/contact/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
@@ -152,13 +125,82 @@
     <loc>/form/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
   </url><url>
-    <loc>/elements/</loc>
-    <lastmod>2019-02-18T12:27:33-06:00</lastmod>
+    <loc>/talk/2021-09-25-serxii/</loc>
+    <lastmod>2015-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/user15/</loc>
+    <lastmod>2015-06-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/bayes-factors/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/cluster-analysis/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/thesis/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/sar/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/recombining/</loc>
+    <lastmod>2014-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/contingent-valuation-method/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/demand/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/municipal-solid-waste-management/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/recycling/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/santiago-de-chile/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/recycling/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/thesis/</loc>
+    <lastmod>2013-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/unimodality/</loc>
+    <lastmod>2013-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/book-review/</loc>
+    <lastmod>2011-11-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/bootstrapping/</loc>
+    <lastmod>2009-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/discussion/</loc>
+    <lastmod>2009-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/cluster/</loc>
+    <lastmod>2009-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/l-statistics/</loc>
+    <lastmod>2009-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/order-statistics/</loc>
+    <lastmod>2009-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/cluster/</loc>
+    <lastmod>2009-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/about/</loc>
   </url><url>
     <loc>/contributors/</loc>
   </url><url>
+    <loc>/tags/dip-test./</loc>
+  </url><url>
     <loc>/license/</loc>
+  </url><url>
+    <loc>/tags/sagra./</loc>
+  </url><url>
+    <loc>/series/</loc>
   </url>
 </urlset>

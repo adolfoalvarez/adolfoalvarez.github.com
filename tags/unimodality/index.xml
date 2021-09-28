@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>unimodality on Adolfo Álvarez</title>
+    <link>/tags/unimodality/</link>
+    <description>Recent content in unimodality on Adolfo Álvarez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Mar 2013 00:00:00 +0000</lastBuildDate><atom:link href="/tags/unimodality/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recombining partitions via unimodality tests</title>
+      <link>/project/thesis/</link>
+      <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/project/thesis/</guid>
+      <description>We develop an algorithm that integrates a splitting process inherited from the SAR algorithm (Peña et al., 2004) with unimodality tests such as the dip test proposed by Hartigan and Hartigan (1985), and finally, we use anetwork configuration to visualize the results</description>
+    </item>
+    
+  </channel>
+</rss>

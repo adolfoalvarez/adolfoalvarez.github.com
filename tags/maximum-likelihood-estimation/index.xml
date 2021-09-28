@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maximum likelihood estimation on Adolfo Álvarez</title>
+    <link>/tags/maximum-likelihood-estimation/</link>
+    <description>Recent content in maximum likelihood estimation on Adolfo Álvarez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 24 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/maximum-likelihood-estimation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Properties of an MLE algorithm for the multivariate linear model with a separable covariance matrix structure</title>
+      <link>/project/mle/</link>
+      <pubDate>Thu, 24 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/project/mle/</guid>
+      <description>In this paper we present properties of an algorithm to determine the maximum likelihood estimators of the covariance matrix when two processes jointly affect the observations.</description>
+    </item>
+    
+  </channel>
+</rss>
